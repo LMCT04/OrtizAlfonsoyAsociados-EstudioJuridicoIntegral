@@ -1,0 +1,36 @@
+.background{
+    height: 100%;
+}
+
+.slideBG1{
+    background-image: url('../../../assets/edificios.jpg');
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slideBG2{
+    background-image: url('../../../assets/fondoBanner.jpg');
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+}
+
+.logoBanner{
+    height: 100%;
+}
+
+.h3{
+    color: #cba864;
+    margin: 0;
+}
+
+.icon{
+    position: absolute;
+    top: 592px;
+}

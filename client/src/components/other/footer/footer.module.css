@@ -1,0 +1,12 @@
+.background{
+    height: 45.1vh;
+    background-color: #211b1b;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    max-width: 85%;
+    height: auto;
+}

@@ -1,0 +1,18 @@
+.background {
+    height: 18vh;
+    background-color: #dee4e4;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    top: -20px;
+}
