@@ -1,7 +1,14 @@
 .background{
     margin-top: 18vh;
-    height: 82vh;
+    height: 195vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.img{
+    height: 35%;
+    background-image: url('../../../assets/fondo5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

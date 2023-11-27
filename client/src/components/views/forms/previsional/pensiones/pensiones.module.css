@@ -1,0 +1,90 @@
+.background{
+    display: flex;
+    justify-content: center;
+    color: #333333;
+}
+
+.form{
+    width: 40%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    align-items: center;
+}
+
+.labels{
+    text-align: left;
+    width: 95%;
+}
+
+.labels2{
+    text-align: left;
+    width: 95%;
+    margin-left: 1.5%;
+}
+
+.labels3{
+    margin-right: 0.5%;
+}
+
+.inputs{
+    width: 96%;
+    height: 3%;
+    margin-bottom: 2.5%;
+    font-size: medium;
+    text-indent: 2%;
+    color: #333333;
+    border: 1px solid #888888;
+    outline-color: #333333;
+}
+
+.inputDesactivate{
+    width: 96%;
+    height: 3%;
+    margin-bottom: 2.5%;
+    font-size: medium;
+    cursor: default;
+    outline:0px;
+    border: 1px solid #888888;
+    text-indent: 2%;
+    color: #333333;
+}
+
+.inputs2{
+    height: 45%;
+    text-indent: 2%;
+    font-size: medium;
+    margin-right: 2%;
+    color: #333333;
+    outline:0px;
+    border: 1px solid #888888;
+}
+
+.selects{
+    height: 50%;
+    font-size: medium;
+    margin-right: 2%;
+    border: 1px solid #888888;
+    outline-color: #333333;
+}
+
+.selects2{
+    height: 25%;
+    margin-bottom: 2.5%;
+    font-size: medium;
+    width: 35%;
+    border: 1px solid #888888;
+    outline-color: #333333;
+}
+
+.fieldSets{
+    display: flex;
+    width: 80%;
+    height: 8%;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border: none;
+    margin-bottom: 1%;
+}

@@ -1,0 +1,17 @@
+.background{
+    height: 100vh;
+    margin-top: 18vh;
+}
+
+.text1{
+    background-color: #888888;
+    color: #dee4e4;
+    display: flex;
+    justify-content: center;
+}
+
+.p{
+    margin-top: 20px;
+    margin-left: 0.4%;
+    margin-right: 0.4%;
+}

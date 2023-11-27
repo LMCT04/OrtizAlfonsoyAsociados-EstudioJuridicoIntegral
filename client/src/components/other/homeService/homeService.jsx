@@ -1,14 +1,13 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import style from "./homeService.module.css";
 import image from "../../../assets/serviceImg.jpg";
 import { NavLink } from "react-router-dom";
+import { serviceText } from "../texts/Texts";
 
 const HomeService = () => {
     const handleDivClick = () => {
-        // Aquí, desplazamos la página al principio de la vista
         window.scrollTo(0, 0);
     };
-    
 
     return (
         <main className={style.background}>
@@ -66,8 +65,8 @@ const HomeService = () => {
                         justifyContent: "center",
                     }}
                 >
-                    <NavLink className={style.link} to='subarea1' >
-                        <Box sx={{ margin: "4.5%" }} onClick={handleDivClick} >
+                    <NavLink className={style.link} to="consultaLaboral">
+                        <Box sx={{ margin: "4.5%" }} onClick={handleDivClick}>
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
@@ -91,16 +90,12 @@ const HomeService = () => {
                             <Typography
                                 sx={{ marginTop: "5%", color: "#dee4e4" }}
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Voluptates dolorem placeat
-                                tempore voluptate ex, dolorum aut culpa eveniet
-                                et incidunt, nihil iusto mollitia magni, debitis
-                                reiciendis! Earum obcaecati in quam?
+                                {serviceText.laboral}
                             </Typography>
                         </Box>
                     </NavLink>
-                    <NavLink className={style.link2} to='subarea2' >
-                        <Box sx={{ margin: "4.5%" }}>
+                    <NavLink className={style.link2} to="consultaCivil">
+                        <Box sx={{ margin: "4.5%" }} onClick={handleDivClick}>
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
@@ -119,16 +114,12 @@ const HomeService = () => {
                                     color: "#555555",
                                 }}
                             >
-                                ART
+                                Previsional
                             </Typography>
                             <Typography
                                 sx={{ marginTop: "5%", color: "#555555" }}
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Voluptates dolorem placeat
-                                tempore voluptate ex, dolorum aut culpa eveniet
-                                et incidunt, nihil iusto mollitia magni, debitis
-                                reiciendis! Earum obcaecati in quam?
+                                {serviceText.previsional}
                             </Typography>
                         </Box>
                     </NavLink>
@@ -141,8 +132,8 @@ const HomeService = () => {
                         justifyContent: "center",
                     }}
                 >
-                    <NavLink className={style.link3} to='subarea3' >
-                        <Box sx={{ margin: "4.5%" }}>
+                    <NavLink className={style.link3} to="consultaPrevisional">
+                        <Box sx={{ margin: "4.5%" }} onClick={handleDivClick}>
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
@@ -166,18 +157,13 @@ const HomeService = () => {
                             <Typography
                                 sx={{ marginTop: "5%", color: "#555555" }}
                             >
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Voluptates dolorem placeat
-                                tempore voluptate ex, dolorum aut culpa eveniet
-                                et incidunt, nihil iusto mollitia magni, debitis
-                                reiciendis! Earum obcaecati in quam?
+                                {serviceText.civil}
                             </Typography>
                         </Box>
                     </NavLink>
                     <Box
                         sx={{
                             height: "46%",
-                            backgroundColor: "red",
                             marginTop: "3.5%",
                             marginLeft: "3.5%",
                             marginRight: "3.5%",
