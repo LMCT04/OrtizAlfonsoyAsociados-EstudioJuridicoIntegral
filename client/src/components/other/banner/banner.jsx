@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import style from "./banner.module.css";
-import { Box, Button,Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import React, { useState } from "react";
 
@@ -14,8 +14,8 @@ import logo2 from "../../../assets/OAAlogo.jpg";
 const Banner = () => {
     const scrollToTop = () => {
         window.scrollTo({
-            top: 768.4, 
-            behavior: 'smooth',
+            top: 768.4,
+            behavior: "smooth",
         });
     };
 
@@ -49,84 +49,128 @@ const Banner = () => {
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center",
-                            boxShadow:'3px 3px 5px black',
+                            boxShadow: "3px 3px 5px black",
+                            "@media (max-width: 768px)": {
+                                width: "68%",
+                                height: "70%",
+                                marginLeft:'16%'
+                            },
                         }}
                     >
                         <Box
                             sx={{
                                 height: "90%",
                                 width: "80%",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
                         >
                             <img
                                 src={logo2}
                                 alt="logo2model"
                                 className={style.logoBanner}
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                }}
                             />
                         </Box>
                         <Button
                             onClick={scrollToTop}
                             sx={{
-                                height: "7%",width: "20%",borderRadius: "20px",display: "flex",
-                                alignItems: "center",transition: "box-shadow 0.3s ease",
+                                height: "7%",
+                                width: "20%",
+                                borderRadius: "20px",
+                                display: "flex",
+                                alignItems: "center",
+                                transition: "box-shadow 0.3s ease",
                                 "&:hover": {
                                     backgroundColor: "#666666",
-                                }, fontWeight:'bold', color:'#dee4e4',backgroundColor: "#666666",
+                                },
+                                fontWeight: "bold",
+                                color: "#dee4e4",
+                                backgroundColor: "#666666",
+                                fontSize: "0.85rem",
+                                marginTop: "1%",
+                                "@media (max-width: 768px)": {
+                                    fontSize: "0.31rem",
+                                },
                             }}
                         >
                             MAS INFO
                             <DoubleArrowIcon
-                                sx={{ color: "#fff" }}
-                                fontSize="small"
-                            />
+                                sx={{ 
+                                    color: "#fff", fontSize: "1.35rem",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'0.7rem'
+                                    },
+                                }}
+                            />{" "}
+                            {/* Ajusta el tamaño del ícono */}
                         </Button>
                     </Box>
                 </SwiperSlide>
 
-                <SwiperSlide className={style.slideBG2} >
+                <SwiperSlide className={style.slideBG2}>
                     <Box
                         sx={{
-                            height:'25%',
-                            width:'65%',
-                            backgroundColor:'#dee4e4',
-                            boxShadow:'3px 3px 5px black',
-                            marginTop:'20%',
-                            display:'flex',
-                            justifyContent:'center',
-                            alignItems:'center'
+                            height: "25%",
+                            width: "65%",
+                            backgroundColor: "#dee4e4",
+                            boxShadow: "3px 3px 5px black",
+                            marginTop: "20%",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            '@media (max-width: 768px)': {
+                                width: '75%',
+                                height:'20%'
+                            },
                         }}
                     >
                         <Box
                             sx={{
-                                display:'flex',
-                                justifyContent:'center',
-                                alignItems:'center',
-                                flexDirection:'column',
-                                height:'80%',
-                                width:'12%',
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                flexDirection: "column",
+                                height: "80%",
+                                width: "12%",
                             }}
                         >
                             <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666',
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    fontSize: "2rem",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'0.5rem'
+                                    }
                                 }}
                             >
                                 MAS DE
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666',
-                                    fontSize:'55px',
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    fontSize: "3rem",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'1rem'
+                                    }
                                 }}
                             >
                                 500
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666'
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    fontSize: "1.5rem",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'0.5rem'
+                                    }
                                 }}
                             >
                                 CASOS
@@ -134,37 +178,42 @@ const Banner = () => {
                         </Box>
                         <Box
                             sx={{
-                                height:'80%',
-                                width:'0.3%',
-                                backgroundColor:"#666666",
-                                marginLeft:'10%',
-                                marginRight:'10%'
+                                height: "80%",
+                                width: "0.3%",
+                                backgroundColor: "#666666",
+                                marginLeft: "10%",
+                                marginRight: "10%",
                             }}
                         />
                         <Box
                             sx={{
-                                display:'flex',
-                                justifyContent:'center',
-                                alignItems:'center',
-                                flexDirection:'column',
-                                height:'80%',
-                                width:'12%',
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                flexDirection: "column",
+                                height: "80%",
+                                width: "12%",
                             }}
                         >
-                        <Typography
+                            <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666',
-                                    fontSize:'55px'
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    fontSize: "3rem",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'1rem'
+                                    }
                                 }}
                             >
                                 100%
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666',
-                                    
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'0.5rem'
+                                    }
                                 }}
                             >
                                 CASOS GANADOS
@@ -172,44 +221,53 @@ const Banner = () => {
                         </Box>
                         <Box
                             sx={{
-                                height:'80%',
-                                width:'0.3%',
-                                backgroundColor:"#666666",
-                                marginLeft:'10%',
-                                marginRight:'10%'
+                                height: "80%",
+                                width: "0.3%",
+                                backgroundColor: "#666666",
+                                marginLeft: "10%",
+                                marginRight: "10%",
                             }}
                         />
                         <Box
                             sx={{
-                                display:'flex',
-                                justifyContent:'center',
-                                alignItems:'center',
-                                flexDirection:'column',
-                                height:'80%',
-                                width:'12%',
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                flexDirection: "column",
+                                height: "80%",
+                                width: "12%",
                             }}
                         >
-                        <Typography
+                            <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666',
-                                    fontSize:'55px'
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    fontSize: "3rem",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'1rem'
+                                    }
                                 }}
                             >
                                 100%
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666',
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'0.5rem'
+                                    }
                                 }}
                             >
                                 SATISFACCION
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight:'bold',
-                                    color:'#666666'
+                                    fontWeight: "bold",
+                                    color: "#666666",
+                                    '@media (max-width: 768px)': {
+                                        fontSize:'0.5rem'
+                                    }
                                 }}
                             >
                                 DEL CLIENTE

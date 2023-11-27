@@ -47,15 +47,15 @@ const Home = () => {
                 <>
                     <Box
                         sx={{
-                            height: "25%",
+                            height: "25%", // Ajusta la altura según sea necesario
                         }}
                     >
                         <Banner />
                     </Box>
                     <Box
                         sx={{
-                            height: "27.5%",
-                            marginTop: "3.4%",
+                            height: "27.5%", // Ajusta la altura según sea necesario
+                            marginTop: "3.4%", // Ajusta el margen superior según sea necesario
                             display: "flex",
                             flexDirection: "column",
                         }}
@@ -91,6 +91,10 @@ const Home = () => {
                                     src={persona}
                                     alt="persona"
                                     className={style.photo}
+                                    style={{
+                                        width: "100%", // Asegura que la imagen sea 100% del ancho del contenedor
+                                        height: "100%", // Ajusta la altura según sea necesario
+                                    }}
                                 />
                             </Box>
                             <Box
@@ -106,7 +110,11 @@ const Home = () => {
                                 }}
                             >
                                 <Typography
-                                    sx={{ marginLeft: "3%", marginRight: "3%" }}
+                                    sx={{
+                                        marginLeft: "3%",
+                                        marginRight: "3%",
+                                        fontSize: "1rem", // Usa unidades relativas
+                                    }}
                                 >
                                     {homeText.biography}
                                 </Typography>
@@ -125,18 +133,19 @@ const Home = () => {
                                         marginRight: "3%",
                                         textAlign: "left",
                                         fontWeight: "bold",
-                                        fontSize: "18px",
+                                        fontSize: "1.2rem", // Ajusta el tamaño según sea necesario
                                         marginTop: "2.5%",
                                     }}
                                 >
                                     "{homeText.phrase}"
                                 </Typography>
                                 <Typography
-                                    fontWeight={"bold"}
+                                    fontWeight="bold"
                                     sx={{
                                         textAlign: "left",
                                         width: "95%",
                                         marginTop: "2%",
+                                        fontSize: "1.5rem", // Ajusta el tamaño según sea necesario
                                     }}
                                 >
                                     Lucas Ortiz
@@ -161,6 +170,8 @@ const Home = () => {
                                     borderRadius: "15px",
                                     height: "30%",
                                     transition: "transform 0.3s ease",
+                                    fontSize: "1rem", // Ajusta el tamaño según sea necesario
+                                    margin: "1% 0", // Ajusta los márgenes según sea necesario
                                     "&:hover": {
                                         backgroundColor: "#666666",
                                         transform: "scale(1.05)",
@@ -172,7 +183,11 @@ const Home = () => {
                             </Button>
                         </NavLink>
                     </Box>
-                    <Footer />
+                    <Footer
+                        sx={{
+                            width: "100%", // Ajusta el ancho según sea necesario
+                        }}
+                    />
                     {showScrollToTop && (
                         <Button
                             onClick={scrollToTop}

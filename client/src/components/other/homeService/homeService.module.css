@@ -79,3 +79,22 @@
     margin: 0;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+    .background {
+        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+    }
+
+    .img {
+        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+    }
+
+    .link, .link2, .link3 {
+        height: auto;
+        margin: 3.5% 3.5% 3.5% 0; /* Ajusta los márgenes según sea necesario */
+    }
+
+    .h1 {
+        width: 80%; /* Ajusta el ancho del h1 en dispositivos móviles */
+    }
+}

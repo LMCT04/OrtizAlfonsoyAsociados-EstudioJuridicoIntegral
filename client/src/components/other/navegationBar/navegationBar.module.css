@@ -16,3 +16,23 @@
     height: auto;
     top: -20px;
 }
+
+@media (max-width: 768px) {
+    .background {
+        height: 15vh; /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    }
+
+    .logo {
+        top: -15px; /* Ajusta la posición del logo en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .background {
+        height: 12vh; /* Ajusta la altura según sea necesario para pantallas aún más pequeñas */
+    }
+
+    .logo {
+        top: -10px; /* Ajusta la posición del logo en pantallas aún más pequeñas */
+    }
+}
