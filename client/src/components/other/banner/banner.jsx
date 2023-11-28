@@ -168,7 +168,7 @@ const Banner = () => {
                                         fontSize: "1.3rem",
                                     },
                                     '@media (max-width: 767px)': {
-                                        fontSize: "0.6rem",
+                                        fontSize: "0.5rem",
                                     },
                                 }}
                             >
@@ -311,7 +311,7 @@ const Banner = () => {
                                 
                                     },
                                     '@media (max-width: 767px)': {
-                                        fontSize: "0.364rem",
+                                        fontSize: "0.5rem",
                                     },
                                 }}
                             >
