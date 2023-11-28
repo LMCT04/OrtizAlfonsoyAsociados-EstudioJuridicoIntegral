@@ -44,7 +44,7 @@ const Banner = () => {
                         sx={{
                             height: "80%",
                             width: "35%",
-                            backgroundColor: "red",
+                            backgroundColor: "#dee4e4",
                             marginLeft: "4%",
                             display: "flex",
                             flexDirection: "column",
@@ -69,6 +69,10 @@ const Banner = () => {
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
+                                "@media only screen and (max-width: 767px)": {
+                                    height:'100%',
+                                    width:'100%'
+                                },
                             }}
                         >
                             <img
@@ -104,8 +108,7 @@ const Banner = () => {
                                     fontSize:'0.6rem'
                                 },
                                 "@media only screen and (max-width: 767px)": {
-                                    width:'25%',
-                                    fontSize:'0.5rem'
+                                    display:'none'
                                 },
                             }}
                         >
@@ -120,8 +123,7 @@ const Banner = () => {
                                         fontSize:'0.7rem'
                                     },
                                 }}
-                            />{" "}
-                            {/* Ajusta el tamaño del ícono */}
+                            />
                         </Button>
                     </Box>
                 </SwiperSlide>
