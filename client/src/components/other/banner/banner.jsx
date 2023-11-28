@@ -101,7 +101,7 @@ const Banner = () => {
                                 "@media only screen and (max-width: 1821px)": {
                                     margin:'0%',
                                     height:'7.5%',
-                                    fontSize:'0.7rem'
+                                    fontSize:'0.6rem'
                                 },
                                 "@media only screen and (max-width: 767px)": {
                                 },
@@ -111,6 +111,9 @@ const Banner = () => {
                             <DoubleArrowIcon
                                 sx={{ 
                                     color: "#fff", fontSize: "1.35rem",
+                                    "@media only screen and (max-width: 1821px)": {
+                                        fontSize:'1rem'
+                                    },
                                     '@media (max-width: 768px)': {
                                         fontSize:'0.7rem'
                                     },
