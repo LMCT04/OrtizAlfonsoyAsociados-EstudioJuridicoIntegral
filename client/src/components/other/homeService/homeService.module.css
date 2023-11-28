@@ -1,15 +1,15 @@
-.background{
+.background {
     background-color: #888888;
     height: 100%;
     display: flex;
 }
 
-.img{
+.img {
     width: 100%;
     height: 35.13vh;
 }
 
-.link{
+.link {
     text-decoration: none;
     outline: none;
     height: 46%;
@@ -20,7 +20,7 @@
     transition: transform 0.3s ease;
 }
 
-.link2{
+.link2 {
     text-decoration: none;
     outline: none;
     height: 46%;
@@ -31,7 +31,7 @@
     transition: transform 0.3s ease;
 }
 
-.link3{
+.link3 {
     text-decoration: none;
     outline: none;
     height: 46%;
@@ -42,36 +42,34 @@
     transition: transform 0.3s ease;
 }
 
-.link:visited{
+.link:visited {
     color: black;
 }
 
-.link2:visited{
+.link2:visited {
     color: black;
 }
 
-.link3:visited{
+.link3:visited {
     color: black;
 }
 
-.link:hover{
+.link:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 12px black;
 }
 
-.link2:hover{
+.link2:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 12px black;
 }
 
-.link3:hover{
+.link3:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 12px black;
 }
 
-.link-
-
-.h1{
+.link- .h1 {
     font-weight: bold;
     background-color: red;
     width: 40%;
@@ -80,21 +78,48 @@
     margin-top: 10px;
 }
 
+@media only screen and (max-width: 1821px) {
+}
+
 @media only screen and (max-width: 767px) {
     .background {
-        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+        display: flex;
+        flex-direction: column;
     }
 
-    .img {
-        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+    .link {
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin: 5%;
     }
 
-    .link, .link2, .link3 {
-        height: auto;
-        margin: 3.5% 3.5% 3.5% 0; /* Ajusta los márgenes según sea necesario */
+    .link2{
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin: 5%;
     }
 
-    .h1 {
-        width: 80%; /* Ajusta el ancho del h1 en dispositivos móviles */
+    .link3{
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin: 5%;
+    }
+
+    .link:hover {
+        transform: scale(1.02);
+        box-shadow: 5px 5px 12px black;
+    }
+    
+    .link2:hover {
+        transform: scale(1.02);
+        box-shadow: 5px 5px 12px black;
+    }
+    
+    .link3:hover {
+        transform: scale(1.02);
+        box-shadow: 5px 5px 12px black;
     }
 }

@@ -19,34 +19,30 @@ const HomeService = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
+                    "@media only screen and (max-width: 1821px)": {},
+                    "@media only screen and (max-width: 767px)": {
+                        width: "100%",
+                        maxWidth: "100%",
+                        margin: "0%",
+                        marginTop: "4%",
+                    },
                 }}
             >
                 <Typography
                     sx={{
                         color: "#fff",
-                        fontSize: "50px",
+                        fontSize: "2.6vw",
                         fontWeight: "bold",
+                        height: "32%",
+                        width: "50%",
+                        "@media only screen and (max-width: 767px)": {
+                            fontSize: "5.5vw",
+                            width: "100%",
+                            height: "100%",
+                        },
                     }}
                 >
-                    SERVICIOS
-                </Typography>
-                <Typography
-                    sx={{
-                        color: "#fff",
-                        fontSize: "50px",
-                        fontWeight: "bold",
-                    }}
-                >
-                    DE
-                </Typography>
-                <Typography
-                    sx={{
-                        color: "#fff",
-                        fontSize: "50px",
-                        fontWeight: "bold",
-                    }}
-                >
-                    CONSULTA
+                    SERVICIOS DE CONSULTA
                 </Typography>
             </Box>
 
@@ -55,6 +51,12 @@ const HomeService = () => {
                     width: "60%",
                     margin: "1.5%",
                     display: "flex",
+                    "@media only screen and (max-width: 767px)": {
+                        width: "100%",
+                        margin: "0%",
+                        display: "flex",
+                        flexDirection: "column",
+                    },
                 }}
             >
                 <Box
@@ -63,6 +65,9 @@ const HomeService = () => {
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
+                        "@media only screen and (max-width: 767px)": {
+                            width: "100%",
+                        },
                     }}
                 >
                     <NavLink className={style.link} to="consultaLaboral">
@@ -73,51 +78,67 @@ const HomeService = () => {
                                     fontSize: "35px",
                                     textAlign: "left",
                                     color: "#dee4e4",
+                                    width: "50%",
+                                    "@media only screen and (max-width: 767px)":
+                                        {
+                                            width: "100%",
+                                            textAlign: "center",
+                                        },
                                 }}
                             >
-                                Consulta
+                                Consulta Laboral
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight: "bold",
-                                    fontSize: "35px",
-                                    textAlign: "left",
+                                    marginTop: "5%",
                                     color: "#dee4e4",
+                                    "@media only screen and (max-width: 767px)":
+                                        {
+                                            width: "100%",
+                                            textAlign: "justify",
+                                        },
                                 }}
-                            >
-                                Laboral
-                            </Typography>
-                            <Typography
-                                sx={{ marginTop: "5%", color: "#dee4e4" }}
                             >
                                 {serviceText.laboral}
                             </Typography>
                         </Box>
                     </NavLink>
                     <NavLink className={style.link2} to="consultaCivil">
-                        <Box sx={{ margin: "4.5%" }} onClick={handleDivClick}>
+                        <Box
+                            sx={{
+                                margin: "4.5%",
+                                "@media only screen and (max-width: 767px)": {
+                                    margin: "3.5%",
+                                },
+                            }}
+                            onClick={handleDivClick}
+                        >
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
                                     fontSize: "35px",
                                     textAlign: "left",
                                     color: "#555555",
+                                    width: "50%",
+                                    "@media only screen and (max-width: 767px)":
+                                        {
+                                            width: "100%",
+                                            textAlign: "center",
+                                        },
                                 }}
                             >
-                                Consulta
+                                Consulta Previsional
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight: "bold",
-                                    fontSize: "35px",
-                                    textAlign: "left",
+                                    marginTop: "5%",
                                     color: "#555555",
+                                    "@media only screen and (max-width: 767px)":
+                                        {
+                                            width: "100%",
+                                            textAlign: "justify",
+                                        },
                                 }}
-                            >
-                                Previsional
-                            </Typography>
-                            <Typography
-                                sx={{ marginTop: "5%", color: "#555555" }}
                             >
                                 {serviceText.previsional}
                             </Typography>
@@ -130,32 +151,49 @@ const HomeService = () => {
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
+                        "@media only screen and (max-width: 767px)": {
+                            width: "100%",
+                        },
                     }}
                 >
                     <NavLink className={style.link3} to="consultaPrevisional">
-                        <Box sx={{ margin: "4.5%" }} onClick={handleDivClick}>
+                        <Box
+                            sx={{
+                                margin: "4.5%",
+                                "@media only screen and (max-width: 767px)": {
+                                    display:'flex',
+                                    flexDirection:'column',
+                                    justifyContent:'center',
+                                },
+                            }}
+                            onClick={handleDivClick}
+                        >
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
                                     fontSize: "35px",
                                     textAlign: "left",
                                     color: "#555555",
+                                    width: "40%",
+                                    "@media only screen and (max-width: 767px)":
+                                        {
+                                            width: "100%",
+                                            textAlign: "center",
+                                        },
                                 }}
                             >
-                                Consulta
+                                Consulta Civil
                             </Typography>
                             <Typography
                                 sx={{
-                                    fontWeight: "bold",
-                                    fontSize: "35px",
-                                    textAlign: "left",
+                                    marginTop: "5%",
                                     color: "#555555",
+                                    "@media only screen and (max-width: 767px)":
+                                        {
+                                            width: "100%",
+                                            textAlign: "justify",
+                                        },
                                 }}
-                            >
-                                Civil
-                            </Typography>
-                            <Typography
-                                sx={{ marginTop: "5%", color: "#555555" }}
                             >
                                 {serviceText.civil}
                             </Typography>
@@ -167,6 +205,12 @@ const HomeService = () => {
                             marginTop: "3.5%",
                             marginLeft: "3.5%",
                             marginRight: "3.5%",
+                            "@media only screen and (max-width: 767px)": {
+                                marginTop: "0%",
+                                marginLeft: "0%",
+                                marginRight: "0%",
+                                marginBottom: "3%",
+                            },
                         }}
                     >
                         <img src={image} alt="img" className={style.img} />
