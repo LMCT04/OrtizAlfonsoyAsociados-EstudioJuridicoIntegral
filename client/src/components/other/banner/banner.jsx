@@ -71,7 +71,8 @@ const Banner = () => {
                                 alignItems: "center",
                                 "@media only screen and (max-width: 767px)": {
                                     height:'100%',
-                                    width:'100%'
+                                    width:'90%',
+                                    marginLeft:'2%'
                                 },
                             }}
                         >
@@ -115,7 +116,7 @@ const Banner = () => {
                             MAS INFO
                             <DoubleArrowIcon
                                 sx={{ 
-                                    color: "#fff", fontSize: "1.35rem",
+                                    color: "#dee4e4", fontSize: "1.35rem",
                                     "@media only screen and (max-width: 1821px)": {
                                         fontSize:'1rem'
                                     },
@@ -143,7 +144,8 @@ const Banner = () => {
                                 
                             },
                             '@media (max-width: 767px)': {
-                                
+                                marginTop:'0%',
+                                width:'75%',
                             },
                         }}
                     >
@@ -163,10 +165,10 @@ const Banner = () => {
                                     color: "#666666",
                                     fontSize: "1.5rem",
                                     "@media only screen and (max-width: 1821px)": {
-                                        fontSize: "1.5rem",
+                                        fontSize: "1.3rem",
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "0.6rem",
                                     },
                                 }}
                             >
@@ -181,7 +183,7 @@ const Banner = () => {
                                         fontSize: "2rem",
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "1.5rem",
                                     },
                                 }}
                             >
@@ -191,12 +193,12 @@ const Banner = () => {
                                 sx={{
                                     fontWeight: "bold",
                                     color: "#666666",
-                                    fontSize: "1.5rem",
+                                    fontSize: "1.3rem",
                                     "@media only screen and (max-width: 1821px)": {
                                 
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "0.6rem",
                                     },
                                 }}
                             >
@@ -231,7 +233,7 @@ const Banner = () => {
                                         fontSize: "2.5rem",
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "1.5rem",
                                     },
                                 }}
                             >
@@ -246,7 +248,7 @@ const Banner = () => {
                                 
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "0.6rem",
                                     },
                                 }}
                             >
@@ -281,7 +283,7 @@ const Banner = () => {
                                         fontSize: "2.5rem",
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "1.5rem",
                                     },
                                 }}
                             >
@@ -295,7 +297,7 @@ const Banner = () => {
                                 
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "0.6rem",
                                     },
                                 }}
                             >
@@ -309,7 +311,7 @@ const Banner = () => {
                                 
                                     },
                                     '@media (max-width: 767px)': {
-                                        
+                                        fontSize: "0.364rem",
                                     },
                                 }}
                             >
