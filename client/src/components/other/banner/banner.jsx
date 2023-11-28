@@ -29,7 +29,7 @@ const Banner = () => {
                 spaceBetween={0}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 9500,
+                    delay: 113500,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -44,13 +44,18 @@ const Banner = () => {
                         sx={{
                             height: "80%",
                             width: "35%",
-                            backgroundColor: "#dee4e4",
+                            backgroundColor: "red",
                             marginLeft: "4%",
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center",
                             boxShadow: "3px 3px 5px black",
-                            "@media (max-width: 768px)": {
+                            "@media only screen and (max-width: 1821px)": {
+                                width: "30%",
+                                height: "75%",
+                                marginLeft:'10%'
+                            },
+                            "@media only screen and (max-width: 767px)": {
                                 width: "68%",
                                 height: "70%",
                                 marginLeft:'16%'
@@ -79,22 +84,26 @@ const Banner = () => {
                         <Button
                             onClick={scrollToTop}
                             sx={{
+                                "&:hover": {
+                                    backgroundColor: "#666666",
+                                },
                                 height: "7%",
                                 width: "20%",
                                 borderRadius: "20px",
                                 display: "flex",
                                 alignItems: "center",
                                 transition: "box-shadow 0.3s ease",
-                                "&:hover": {
-                                    backgroundColor: "#666666",
-                                },
                                 fontWeight: "bold",
                                 color: "#dee4e4",
                                 backgroundColor: "#666666",
                                 fontSize: "0.85rem",
                                 marginTop: "1%",
-                                "@media (max-width: 768px)": {
-                                    fontSize: "0.31rem",
+                                "@media only screen and (max-width: 1821px)": {
+                                    margin:'0%',
+                                    height:'7.5%',
+                                    fontSize:'0.7rem'
+                                },
+                                "@media only screen and (max-width: 767px)": {
                                 },
                             }}
                         >

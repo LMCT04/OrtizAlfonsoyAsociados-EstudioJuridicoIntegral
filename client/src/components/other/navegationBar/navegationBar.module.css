@@ -18,6 +18,9 @@
 }
 
 @media only screen and (max-width:1821px) {
+    .background{
+        height: 19%;
+    }
     .logo{
         max-width: 80%;
         top: -15px;

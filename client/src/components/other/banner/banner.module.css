@@ -21,6 +21,8 @@
     background-position: center center;
 }
 
+/*#dee4e4*/
+
 .logoBanner{
     height: 100%;
 }
@@ -35,24 +37,10 @@
     top: 592px;
 }
 
-@media (max-width: 768px) {
-    .slideBG1,
-    .slideBG2 {
-        height: 50vh; /* Ajusta la altura según sea necesario para pantallas más pequeñas */
-    }
+@media only screen and (max-width:1821px) {
 
-    .icon {
-        top: 492px; /* Ajusta la posición del icono en pantallas más pequeñas */
-    }
 }
 
-@media (max-width: 576px) {
-    .slideBG1,
-    .slideBG2 {
-        height: 40vh; /* Ajusta la altura según sea necesario para pantallas aún más pequeñas */
-    }
+@media only screen and (max-width:767px) {
 
-    .icon {
-        top: 392px; /* Ajusta la posición del icono en pantallas aún más pequeñas */
-    }
 }
