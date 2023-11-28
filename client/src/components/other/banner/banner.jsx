@@ -56,7 +56,7 @@ const Banner = () => {
                                 marginLeft:'10%'
                             },
                             "@media only screen and (max-width: 767px)": {
-                                width: "75%",
+                                width: "70%",
                                 height: "50%",
                                 marginLeft:'0%'
                             },
@@ -119,7 +119,7 @@ const Banner = () => {
                                     "@media only screen and (max-width: 1821px)": {
                                         fontSize:'1rem'
                                     },
-                                    '@media (max-width: 768px)': {
+                                    '@media (max-width: 767px)': {
                                         fontSize:'0.7rem'
                                     },
                                 }}
@@ -139,9 +139,11 @@ const Banner = () => {
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            '@media (max-width: 768px)': {
-                                width: '75%',
-                                height:'20%'
+                            "@media only screen and (max-width: 1821px)": {
+                                
+                            },
+                            '@media (max-width: 767px)': {
+                                
                             },
                         }}
                     >
@@ -159,10 +161,13 @@ const Banner = () => {
                                 sx={{
                                     fontWeight: "bold",
                                     color: "#666666",
-                                    fontSize: "2rem",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'0.5rem'
-                                    }
+                                    fontSize: "1.5rem",
+                                    "@media only screen and (max-width: 1821px)": {
+                                        fontSize: "1.5rem",
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 MAS DE
@@ -172,9 +177,12 @@ const Banner = () => {
                                     fontWeight: "bold",
                                     color: "#666666",
                                     fontSize: "3rem",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'1rem'
-                                    }
+                                    "@media only screen and (max-width: 1821px)": {
+                                        fontSize: "2rem",
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 500
@@ -184,9 +192,12 @@ const Banner = () => {
                                     fontWeight: "bold",
                                     color: "#666666",
                                     fontSize: "1.5rem",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'0.5rem'
-                                    }
+                                    "@media only screen and (max-width: 1821px)": {
+                                
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 CASOS
@@ -216,9 +227,12 @@ const Banner = () => {
                                     fontWeight: "bold",
                                     color: "#666666",
                                     fontSize: "3rem",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'1rem'
-                                    }
+                                    "@media only screen and (max-width: 1821px)": {
+                                        fontSize: "2.5rem",
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 100%
@@ -227,9 +241,13 @@ const Banner = () => {
                                 sx={{
                                     fontWeight: "bold",
                                     color: "#666666",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'0.5rem'
-                                    }
+                                    fontSize: "1rem",
+                                    "@media only screen and (max-width: 1821px)": {
+                                
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 CASOS GANADOS
@@ -259,9 +277,12 @@ const Banner = () => {
                                     fontWeight: "bold",
                                     color: "#666666",
                                     fontSize: "3rem",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'1rem'
-                                    }
+                                    "@media only screen and (max-width: 1821px)": {
+                                        fontSize: "2.5rem",
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 100%
@@ -270,9 +291,12 @@ const Banner = () => {
                                 sx={{
                                     fontWeight: "bold",
                                     color: "#666666",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'0.5rem'
-                                    }
+                                    "@media only screen and (max-width: 1821px)": {
+                                
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 SATISFACCION
@@ -281,9 +305,12 @@ const Banner = () => {
                                 sx={{
                                     fontWeight: "bold",
                                     color: "#666666",
-                                    '@media (max-width: 768px)': {
-                                        fontSize:'0.5rem'
-                                    }
+                                    "@media only screen and (max-width: 1821px)": {
+                                
+                                    },
+                                    '@media (max-width: 767px)': {
+                                        
+                                    },
                                 }}
                             >
                                 DEL CLIENTE
