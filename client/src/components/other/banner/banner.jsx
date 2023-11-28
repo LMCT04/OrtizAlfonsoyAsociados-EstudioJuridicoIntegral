@@ -104,7 +104,8 @@ const Banner = () => {
                                     fontSize:'0.6rem'
                                 },
                                 "@media only screen and (max-width: 767px)": {
-                                    width:'25%'
+                                    width:'25%',
+                                    fontSize:'0.5rem'
                                 },
                             }}
                         >
