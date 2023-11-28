@@ -5,20 +5,11 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import style from "./banner.module.css";
-import { Box, Button, Typography } from "@mui/material";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-import React, { useState } from "react";
+import { Box, Typography } from "@mui/material";
 
 import logo2 from "../../../assets/OAAlogo.jpg";
 
 const Banner = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 768.4,
-            behavior: "smooth",
-        });
-    };
-
     return (
         <main className={style.background}>
             <Swiper
@@ -53,27 +44,23 @@ const Banner = () => {
                             "@media only screen and (max-width: 1821px)": {
                                 width: "30%",
                                 height: "75%",
-                                marginLeft:'10%'
+                                marginLeft: "10%",
                             },
                             "@media only screen and (max-width: 767px)": {
                                 width: "70%",
                                 height: "50%",
-                                marginLeft:'0%'
+                                marginLeft: "0%",
                             },
                         }}
                     >
                         <Box
                             sx={{
-                                height: "90%",
-                                width: "80%",
+                                height: "100%",
+                                width: "90%",
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
-                                "@media only screen and (max-width: 767px)": {
-                                    height:'100%',
-                                    width:'90%',
-                                    marginLeft:'2%'
-                                },
+                                marginLeft: "2%",
                             }}
                         >
                             <img
@@ -86,46 +73,6 @@ const Banner = () => {
                                 }}
                             />
                         </Box>
-                        <Button
-                            onClick={scrollToTop}
-                            sx={{
-                                "&:hover": {
-                                    backgroundColor: "#666666",
-                                },
-                                height: "7%",
-                                width: "20%",
-                                borderRadius: "20px",
-                                display: "flex",
-                                alignItems: "center",
-                                transition: "box-shadow 0.3s ease",
-                                fontWeight: "bold",
-                                color: "#dee4e4",
-                                backgroundColor: "#666666",
-                                fontSize: "0.85rem",
-                                marginTop: "1%",
-                                "@media only screen and (max-width: 1821px)": {
-                                    margin:'0%',
-                                    height:'7.5%',
-                                    fontSize:'0.6rem'
-                                },
-                                "@media only screen and (max-width: 767px)": {
-                                    display:'none'
-                                },
-                            }}
-                        >
-                            MAS INFO
-                            <DoubleArrowIcon
-                                sx={{ 
-                                    color: "#dee4e4", fontSize: "1.35rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                        fontSize:'1rem'
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize:'0.7rem'
-                                    },
-                                }}
-                            />
-                        </Button>
                     </Box>
                 </SwiperSlide>
 
@@ -136,187 +83,206 @@ const Banner = () => {
                             width: "65%",
                             backgroundColor: "#dee4e4",
                             boxShadow: "3px 3px 5px black",
-                            marginTop: "20%",
+                            marginTop: "18.5%",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            "@media only screen and (max-width: 1821px)": {
-                                
-                            },
-                            '@media (max-width: 767px)': {
-                                marginTop:'0%',
-                                width:'75%',
+                            "@media only screen and (max-width: 1821px)": {},
+                            "@media (max-width: 767px)": {
+                                marginTop: "0%",
+                                width: "75%",
                             },
                         }}
                     >
                         <Box
                             sx={{
+                                backgroundColor: "#dee4e4",
+                                width: "90%",
+                                height: "85%",
+                                margin: "auto 0",
                                 display: "flex",
                                 justifyContent: "center",
-                                alignItems: "center",
-                                flexDirection: "column",
-                                height: "80%",
-                                width: "12%",
                             }}
                         >
-                            <Typography
+                            <Box
                                 sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    fontSize: "1.5rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                        fontSize: "1.3rem",
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "0.5rem",
+                                    height: "100%",
+                                    width: "20%",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "center",
+                                    "@media (max-width: 767px)": {
+                                        width: "30%",
                                     },
                                 }}
                             >
-                                MAS DE
-                            </Typography>
-                            <Typography
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "1vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "2.5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    MAS DE
+                                </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "3vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    500
+                                </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "1vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "2.5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    CASOS
+                                </Typography>
+                            </Box>
+                            <Box
                                 sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    fontSize: "3rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                        fontSize: "2rem",
+                                    backgroundColor: "#666666",
+                                    width: "0.3%",
+                                    height: "100%",
+                                    marginLeft: "5%",
+                                    marginRight: "5%",
+                                    "@media (max-width: 767px)": {
+                                        width: "0.5%",
+                                        marginLeft: "2%",
+                                        marginRight: "2%",
                                     },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "1.5rem",
+                                }}
+                            />
+                            <Box
+                                sx={{
+                                    height: "100%",
+                                    width: "20%",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "center",
+                                    "@media (max-width: 767px)": {
+                                        width: "30%",
                                     },
                                 }}
                             >
-                                500
-                            </Typography>
-                            <Typography
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "3vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    100%
+                                </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "1vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "2.5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    CASOS GANADOS
+                                </Typography>
+                            </Box>
+                            <Box
                                 sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    fontSize: "1.3rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                
+                                    width: "0.3%",
+                                    height: "100%",
+                                    marginLeft: "5%",
+                                    marginRight: "5%",
+                                    backgroundColor: "#666666",
+                                    "@media (max-width: 767px)": {
+                                        width: "0.5%",
+                                        marginLeft: "2%",
+                                        marginRight: "2%",
                                     },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "0.6rem",
+                                }}
+                            />
+                            <Box
+                                sx={{
+                                    height: "100%",
+                                    width: "20%",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "center",
+                                    "@media (max-width: 767px)": {
+                                        width: "30%",
                                     },
                                 }}
                             >
-                                CASOS
-                            </Typography>
-                        </Box>
-                        <Box
-                            sx={{
-                                height: "80%",
-                                width: "0.3%",
-                                backgroundColor: "#666666",
-                                marginLeft: "10%",
-                                marginRight: "10%",
-                            }}
-                        />
-                        <Box
-                            sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                flexDirection: "column",
-                                height: "80%",
-                                width: "12%",
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    fontSize: "3rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                        fontSize: "2.5rem",
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "1.5rem",
-                                    },
-                                }}
-                            >
-                                100%
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    fontSize: "1rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "0.6rem",
-                                    },
-                                }}
-                            >
-                                CASOS GANADOS
-                            </Typography>
-                        </Box>
-                        <Box
-                            sx={{
-                                height: "80%",
-                                width: "0.3%",
-                                backgroundColor: "#666666",
-                                marginLeft: "10%",
-                                marginRight: "10%",
-                            }}
-                        />
-                        <Box
-                            sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                flexDirection: "column",
-                                height: "80%",
-                                width: "12%",
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    fontSize: "3rem",
-                                    "@media only screen and (max-width: 1821px)": {
-                                        fontSize: "2.5rem",
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "1.5rem",
-                                    },
-                                }}
-                            >
-                                100%
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    "@media only screen and (max-width: 1821px)": {
-                                
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "0.6rem",
-                                    },
-                                }}
-                            >
-                                SATISFACCION
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: "#666666",
-                                    "@media only screen and (max-width: 1821px)": {
-                                
-                                    },
-                                    '@media (max-width: 767px)': {
-                                        fontSize: "0.5rem",
-                                    },
-                                }}
-                            >
-                                DEL CLIENTE
-                            </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "3vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    100%
+                                </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "1vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "2.5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    SATISFACCION
+                                </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "#666666",
+                                        fontWeight: "bold",
+                                        lineHeight: "1em",
+                                        fontSize: "1vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "2.5vw",
+                                            lineHeight: "1.5em",
+                                        },
+                                    }}
+                                >
+                                    DEL CLIENTE
+                                </Typography>
+                            </Box>
                         </Box>
                     </Box>
                 </SwiperSlide>
