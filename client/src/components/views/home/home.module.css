@@ -10,11 +10,11 @@
 
 @media only screen and (max-width: 767px) {
     .background {
-        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
-        margin-top: 10vh; /* Ajusta el margen superior según sea necesario */
+        height: auto; 
+        margin-top: 18vh; 
     }
 
     .photo {
-        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+        
     }
 }

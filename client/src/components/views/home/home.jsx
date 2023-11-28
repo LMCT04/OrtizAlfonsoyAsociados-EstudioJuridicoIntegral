@@ -47,15 +47,15 @@ const Home = () => {
                 <>
                     <Box
                         sx={{
-                            height: "25%", // Ajusta la altura según sea necesario
+                            height: "25%",
                         }}
                     >
                         <Banner />
                     </Box>
                     <Box
                         sx={{
-                            height: "27.5%", // Ajusta la altura según sea necesario
-                            marginTop: "3.4%", // Ajusta el margen superior según sea necesario
+                            height: "27.5%",
+                            marginTop: "3.4%",
                             display: "flex",
                             flexDirection: "column",
                         }}
@@ -69,6 +69,10 @@ const Home = () => {
                             display: "flex",
                             justifyContent: "center",
                             marginTop: "6%",
+                            backgroundColor:'red',
+                            '@media only screen and (max-width: 767px)':{
+                                marginTop:'10%'
+                            }
                         }}
                     >
                         <Box
@@ -79,12 +83,20 @@ const Home = () => {
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
+                                '@media only screen and (max-width: 767px)':{
+                                    width:'100%',
+                                    flexDirection:'column'
+                                }
                             }}
                         >
                             <Box
                                 sx={{
                                     height: "80%",
                                     width: "30%",
+                                    '@media only screen and (max-width: 767px)':{
+                                        width:'80%',
+                                        marginTop:'5%'
+                                    }
                                 }}
                             >
                                 <img
@@ -92,8 +104,8 @@ const Home = () => {
                                     alt="persona"
                                     className={style.photo}
                                     style={{
-                                        width: "100%", // Asegura que la imagen sea 100% del ancho del contenedor
-                                        height: "100%", // Ajusta la altura según sea necesario
+                                        width: "100%",
+                                        height: "100%", 
                                     }}
                                 />
                             </Box>
@@ -113,7 +125,7 @@ const Home = () => {
                                     sx={{
                                         marginLeft: "3%",
                                         marginRight: "3%",
-                                        fontSize: "1rem", // Usa unidades relativas
+                                        fontSize: "1rem",
                                     }}
                                 >
                                     {homeText.biography}

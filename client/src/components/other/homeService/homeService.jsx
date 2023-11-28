@@ -75,7 +75,7 @@ const HomeService = () => {
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
-                                    fontSize: "35px",
+                                    fontSize: "1.82vw",
                                     textAlign: "left",
                                     color: "#dee4e4",
                                     width: "50%",
@@ -83,6 +83,7 @@ const HomeService = () => {
                                         {
                                             width: "100%",
                                             textAlign: "center",
+                                            fontSize: "5vw",
                                         },
                                 }}
                             >
@@ -92,10 +93,13 @@ const HomeService = () => {
                                 sx={{
                                     marginTop: "5%",
                                     color: "#dee4e4",
+                                    fontSize:'0.832vw',
+                                    textAlign: "justify",
                                     "@media only screen and (max-width: 767px)":
                                         {
                                             width: "100%",
                                             textAlign: "justify",
+                                            fontSize:'3.5vw',
                                         },
                                 }}
                             >
@@ -116,7 +120,7 @@ const HomeService = () => {
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
-                                    fontSize: "35px",
+                                    fontSize: "1.82vw",
                                     textAlign: "left",
                                     color: "#555555",
                                     width: "50%",
@@ -124,6 +128,7 @@ const HomeService = () => {
                                         {
                                             width: "100%",
                                             textAlign: "center",
+                                            fontSize: "5vw",
                                         },
                                 }}
                             >
@@ -133,10 +138,13 @@ const HomeService = () => {
                                 sx={{
                                     marginTop: "5%",
                                     color: "#555555",
+                                    fontSize:'0.832vw',
+                                    textAlign: "justify",
                                     "@media only screen and (max-width: 767px)":
                                         {
                                             width: "100%",
                                             textAlign: "justify",
+                                            fontSize:'3.5vw',
                                         },
                                 }}
                             >
@@ -171,7 +179,7 @@ const HomeService = () => {
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
-                                    fontSize: "35px",
+                                    fontSize: "1.82vw",
                                     textAlign: "left",
                                     color: "#555555",
                                     width: "40%",
@@ -179,6 +187,7 @@ const HomeService = () => {
                                         {
                                             width: "100%",
                                             textAlign: "center",
+                                            fontSize: "5vw",
                                         },
                                 }}
                             >
@@ -188,10 +197,13 @@ const HomeService = () => {
                                 sx={{
                                     marginTop: "5%",
                                     color: "#555555",
+                                    fontSize:'0.832vw',
+                                    textAlign: "justify",
                                     "@media only screen and (max-width: 767px)":
                                         {
                                             width: "100%",
                                             textAlign: "justify",
+                                            fontSize:'3.5vw',
                                         },
                                 }}
                             >
