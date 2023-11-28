@@ -14,7 +14,7 @@ const NavBar = () => {
                     alignItems:'center',
                     overflow:'hidden',
                     '@media (max-width: 768px)': {
-                        width: '50%', // Ajusta el ancho para pantallas más pequeñas
+                        width: '50%',
                     },
                 }}
             >
