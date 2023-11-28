@@ -56,9 +56,9 @@ const Banner = () => {
                                 marginLeft:'10%'
                             },
                             "@media only screen and (max-width: 767px)": {
-                                width: "68%",
-                                height: "70%",
-                                marginLeft:'16%'
+                                width: "75%",
+                                height: "50%",
+                                marginLeft:'0%'
                             },
                         }}
                     >
@@ -104,6 +104,7 @@ const Banner = () => {
                                     fontSize:'0.6rem'
                                 },
                                 "@media only screen and (max-width: 767px)": {
+                                    width:'25%'
                                 },
                             }}
                         >
