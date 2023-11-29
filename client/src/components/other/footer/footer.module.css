@@ -6,9 +6,7 @@
 }
 
 .logo {
-    position: relative;
-    max-width: 85%;
-    height: auto;
+    height: 100%;
 }
 
 @media only screen and (max-width: 767px) {
