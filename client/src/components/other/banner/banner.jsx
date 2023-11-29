@@ -16,6 +16,7 @@ const Banner = () => {
                 style={{
                     "--swiper-navigation-color": "#fff",
                     "--swiper-pagination-color": "#fff",
+                    "--swiper-navigation-size": "4.8vh",
                 }}
                 spaceBetween={0}
                 slidesPerView={1}

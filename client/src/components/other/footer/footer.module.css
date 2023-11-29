@@ -1,4 +1,4 @@
-.background{
+.background {
     height: 45.3vh;
     background-color: #211b1b;
     display: flex;
@@ -12,12 +12,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .background {
-        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+    .logo {
+        max-width: 100%;
     }
 
-    .logo {
-        max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
-        height: auto; /* Ajusta la altura según el contenido en dispositivos móviles */
+    .background {
+        height: 29vh;
     }
+
 }
