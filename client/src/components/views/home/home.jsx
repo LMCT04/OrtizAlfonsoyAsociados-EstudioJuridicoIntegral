@@ -92,6 +92,8 @@ const Home = () => {
                                 sx={{
                                     height: "80%",
                                     width: "30%",
+                                    marginTop:'5%',
+                                    marginBottom:'5%',
                                     "@media only screen and (max-width: 767px)":
                                         {
                                             width: "80%",
@@ -204,7 +206,8 @@ const Home = () => {
                                     height: "30%",
                                     transition: "transform 0.3s ease",
                                     fontSize: "1vw",
-                                    margin: "1% 0",
+                                    margin: "15%",
+                                    width:'100%',
                                     "&:hover": {
                                         backgroundColor: "#666666",
                                         transform: "scale(1.05)",

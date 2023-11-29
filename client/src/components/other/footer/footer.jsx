@@ -7,7 +7,7 @@ const Footer = () => {
         <main className={style.background}>
             <Box
                 sx={{
-                    height: "98%",
+                    height: "96.5%",
                     width: "25%",
                     marginLeft: "4%",
                     "@media only screen and (max-width: 767px)": {

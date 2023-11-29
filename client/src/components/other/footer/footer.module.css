@@ -1,5 +1,5 @@
 .background {
-    height: 45.3vh;
+    height: 45vh;
     background-color: #211b1b;
     display: flex;
     align-items: center;
@@ -8,6 +8,8 @@
 .logo {
     height: 100%;
 }
+
+
 
 @media only screen and (max-width: 767px) {
     .logo {
