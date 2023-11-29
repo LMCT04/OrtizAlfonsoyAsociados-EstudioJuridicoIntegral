@@ -177,7 +177,7 @@ const Home = () => {
                                             {
                                                 textAlign: "right",
                                                 fontSize: "5vw",
-                                                marginBottom:'3%'
+                                                marginBottom: "3%",
                                             },
                                     }}
                                 >
@@ -211,11 +211,11 @@ const Home = () => {
                                         boxShadow: "5px 5px 12px black",
                                     },
                                     "@media only screen and (max-width: 767px)":
-                                            {
-                                                margin:'15% 0',
-                                                fontSize: "4vw",
-                                                height: "8vh",
-                                            },
+                                        {
+                                            margin: "15% 0",
+                                            fontSize: "4vw",
+                                            height: "8vh",
+                                        },
                                 }}
                             >
                                 FORMULARIO DE CONSULTA
@@ -238,6 +238,10 @@ const Home = () => {
                                 backgroundColor: "#555555",
                                 "&:hover": {
                                     backgroundColor: "#666666",
+                                },
+                                "@media only screen and (max-width: 767px)": {
+                                    bottom: "10px",
+                                    right: "10px",
                                 },
                             }}
                         >

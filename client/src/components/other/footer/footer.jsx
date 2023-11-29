@@ -29,7 +29,8 @@ const Footer = () => {
                     alignItems: "center",
                     "@media only screen and (max-width: 767px)": {
                         marginLeft: "0%",
-                        width:'50%'
+                        width:'50%',
+                        alignItems:'flex-start',
                     },
                 }}
             >
