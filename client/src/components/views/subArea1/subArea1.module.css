@@ -1,14 +1,8 @@
 .background{
+    height: auto;
     margin-top: 18vh;
-    height: 195vh;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
 }
 
 .img{
-    height: 35%;
-    background-image: url('../../../assets/fondo5.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
 }

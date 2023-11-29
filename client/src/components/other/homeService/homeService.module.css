@@ -122,4 +122,8 @@
         transform: scale(1.02);
         box-shadow: 5px 5px 12px black;
     }
+
+    .img {
+        width: 90%;
+    }
 }
