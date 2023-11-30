@@ -27,10 +27,9 @@ const FormIndex = () => {
             ) : (
                 <>
                     <div className={style.text1}>
-                        <p className={style.p}>Seleccione y complete el</p>
-                        <h3>FORMULARIO</h3>
                         <p className={style.p}>
-                            que desee para llevar a cabo su consulta
+                            Seleccione y complete el FORMULARIO que desee para
+                            llevar a cabo su consulta
                         </p>
                     </div>
                     <Tabs
