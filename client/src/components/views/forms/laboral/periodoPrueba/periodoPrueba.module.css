@@ -1,10 +1,10 @@
-.background{
+.background {
     display: flex;
     justify-content: center;
     color: #333333;
 }
 
-.form{
+.form {
     width: 40%;
     height: 200vh;
     display: flex;
@@ -13,22 +13,22 @@
     margin-top: 2%;
 }
 
-.labels{
+.labels {
     text-align: left;
     width: 95%;
 }
 
-.labels2{
+.labels2 {
     text-align: left;
     width: 95%;
     margin-left: 1.5%;
 }
 
-.labels3{
+.labels3 {
     margin-right: 0.5%;
 }
 
-.inputs{
+.inputs {
     width: 96%;
     height: 2%;
     margin-bottom: 3%;
@@ -39,29 +39,29 @@
     outline-color: #333333;
 }
 
-.inputDesactivate{
+.inputDesactivate {
     width: 96%;
     height: 2%;
     margin-bottom: 2.5%;
     font-size: medium;
     cursor: default;
-    outline:0px;
+    outline: 0px;
     border: 1px solid #888888;
     text-indent: 2%;
     color: #333333;
 }
 
-.inputs2{
+.inputs2 {
     height: 45%;
     text-indent: 2%;
     font-size: medium;
     margin-right: 2%;
     color: #333333;
-    outline:0px;
+    outline: 0px;
     border: 1px solid #888888;
 }
 
-.selects{
+.selects {
     height: 50%;
     font-size: medium;
     margin-right: 2%;
@@ -69,7 +69,7 @@
     outline-color: #333333;
 }
 
-.selects2{
+.selects2 {
     height: 24%;
     margin-bottom: 2.5%;
     font-size: medium;
@@ -78,7 +78,7 @@
     outline-color: #333333;
 }
 
-.fieldSets{
+.fieldSets {
     display: flex;
     width: 80%;
     height: 5.2%;
@@ -90,7 +90,19 @@
     margin-top: 3%;
 }
 
-.textA{
+.fieldSets2 {
+    display: flex;
+    width: 80%;
+    height: 5.2%;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border: none;
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+
+.textA {
     height: 5%;
     width: 96%;
     margin-bottom: 3.5%;
@@ -99,4 +111,20 @@
     color: #333333;
     border: 1px solid #888888;
     outline-color: #333333;
+}
+
+@media only screen and (max-width: 767px) {
+    .form {
+        width: 95%;
+    }
+    .selects2 {
+        width: 60%;
+    }
+    .fieldSets {
+        flex-direction: column;
+        align-items: start;
+        width: 97%;
+        height: 7%;
+        margin-bottom: 3%;
+    }
 }

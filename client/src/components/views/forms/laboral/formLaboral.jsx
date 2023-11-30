@@ -37,14 +37,14 @@ const FormLaboral = () => {
             >
                 <Tab
                     label="DESPIDO"
-                    isActive={value === 0}
+                    value={0}
                     sx={{
                         color: "gray",
                     }}
                 />
                 <Tab
                     label="ACCIDENTE LABORAL"
-                    isActive={value === 1}
+                    value={1}
                     sx={{
                         color: "gray",
                     }}

@@ -54,21 +54,21 @@ const FormIndex = () => {
                     >
                         <Tab
                             label="LABORAL"
-                            isActive={value === 0}
+                            value={0}
                             sx={{
                                 color: "gray",
                             }}
                         />
                         <Tab
                             label="PREVISIONAL"
-                            isActive={value === 1}
+                            value={1}
                             sx={{
                                 color: "gray",
                             }}
                         />
                         <Tab
                             label="CIVIL"
-                            isActive={value === 2}
+                            value={2}
                             sx={{
                                 color: "gray",
                             }}

@@ -37,14 +37,14 @@ const FormPrevisional = () => {
             >
                 <Tab
                     label="JUBILACIONES"
-                    isActive={value === 0}
+                    value={0}
                     sx={{
                         color: "gray",
                     }}
                 />
                 <Tab
                     label="PENSIONES"
-                    isActive={value === 1}
+                    value={1}
                     sx={{
                         color: "gray",
                     }}

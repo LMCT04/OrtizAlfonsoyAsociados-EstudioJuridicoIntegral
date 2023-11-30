@@ -13,7 +13,7 @@ const FormCivil = () => {
     return(
         <main>
             <div className={style.text1} >
-                <p>Seleccione el tipo de consulta Civil</p>
+                <p>Seleccione el tipo de consulta CIVIL</p>
             </div>
             <Tabs
                 value={value}
@@ -36,7 +36,7 @@ const FormCivil = () => {
             >
                 <Tab
                     label="ACCIDENTE VIAL"
-                    isActive={value === 0}
+                    value={0}
                     sx={{
                         color: "gray",
                     }}

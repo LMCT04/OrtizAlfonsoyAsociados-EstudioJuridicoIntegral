@@ -173,6 +173,7 @@ const SubArea2 = () => {
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: "normal",
+                                height: "auto",
                             },
                         }}
                     >
@@ -236,6 +237,7 @@ const SubArea2 = () => {
                                     marginRight: "0%",
                                     height: "35%",
                                     marginTop: "5%",
+                                    marginBottom:'5%'
                                 },
                             }}
                         >

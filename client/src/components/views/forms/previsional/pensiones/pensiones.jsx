@@ -16,7 +16,7 @@ const Pensiones = () => {
     return (
         <main className={style.background}>
         <form onSubmit={handleSubmit} className={style.form}>
-            <label for="consulta" className={style.labels}>
+            <label htmlFor="consulta" className={style.labels}>
                 Tipo de Consulta:
             </label>
             <input
@@ -33,7 +33,7 @@ const Pensiones = () => {
                 errors={state.errors}
             />
 
-            <label for="nombre" className={style.labels}>
+            <label htmlFor="nombre" className={style.labels}>
                 Nombre:
             </label>
             <input
@@ -49,7 +49,7 @@ const Pensiones = () => {
                 errors={state.errors}
             />
 
-            <label for="apellido" className={style.labels}>
+            <label htmlFor="apellido" className={style.labels}>
                 Apellido:
             </label>
             <input
@@ -65,7 +65,7 @@ const Pensiones = () => {
                 errors={state.errors}
             />
 
-            <label for="dni" className={style.labels}>
+            <label htmlFor="dni" className={style.labels}>
                 DNI:
             </label>
             <input
@@ -77,10 +77,10 @@ const Pensiones = () => {
                 required
             />
 
-            <fieldset className={style.fieldSets}>
+            <fieldset className={style.fieldSets2}>
                 <legend>Fecha de Nacimiento</legend>
 
-                <label for="dia" className={style.labels3}>
+                <label htmlFor="dia" className={style.labels3}>
                     Dia:{" "}
                 </label>
                 <input
@@ -94,7 +94,7 @@ const Pensiones = () => {
                     required
                 />
 
-                <label for="mes" className={style.labels3}>
+                <label htmlFor="mes" className={style.labels3}>
                     Mes:{" "}
                 </label>
                 <select
@@ -103,7 +103,7 @@ const Pensiones = () => {
                     required
                     className={style.selects}
                 >
-                    <option value="" selected="" disabled=""></option>
+                    <option value="" defaultValue="" disabled=""></option>
                     <option value="Enero">Enero</option>
                     <option value="Febrero">Febrero</option>
                     <option value="Marzo">Marzo</option>
@@ -125,7 +125,7 @@ const Pensiones = () => {
                     required
                     className={style.selects}
                 >
-                    <option value="" selected="" disabled=""></option>
+                    <option value="" defaultValue="" disabled=""></option>
                     {years.map((year) => (
                         <option key={year} value={year}>
                             {year}
@@ -144,7 +144,7 @@ const Pensiones = () => {
                     height: "14%",
                 }}
             >
-                <label for="nacionalidad" className={style.labels2}>
+                <label htmlFor="nacionalidad" className={style.labels2}>
                     Nacionalidad:
                 </label>
                 <select
@@ -153,7 +153,7 @@ const Pensiones = () => {
                     required
                     className={style.selects2}
                 >
-                    <option value="" selected="" disabled=""></option>
+                    <option value="" defaultValue="" disabled=""></option>
                     <option value="Argentina">Argentina</option>
                     <option value="Uruguay">Uruguay</option>
                     <option value="Chile">Chile</option>
@@ -169,7 +169,7 @@ const Pensiones = () => {
                     <option value="Otros">Otros</option>
                 </select>
 
-                <label for="estadoCivil" className={style.labels2}>
+                <label htmlFor="estadoCivil" className={style.labels2}>
                     Estado Civil:
                 </label>
                 <select
@@ -178,7 +178,7 @@ const Pensiones = () => {
                     required
                     className={style.selects2}
                 >
-                    <option value="" selected="" disabled=""></option>
+                    <option value="" defaultValue="" disabled=""></option>
                     <option value="Soltero">Soltero</option>
                     <option value="Casado">Casado</option>
                     <option value="Viudo">Viudo</option>
@@ -188,7 +188,7 @@ const Pensiones = () => {
 
             <fieldset className={style.fieldSets}>
                 <legend>Domicilio y Residencia</legend>
-                <label for="domicilioParticular" className={style.labels3}>
+                <label htmlFor="domicilioParticular" className={style.labels3}>
                     Domicilio Particular:
                 </label>
                 <input
@@ -199,7 +199,7 @@ const Pensiones = () => {
                     required
                 />
 
-                <label for="localidad" className={style.labels3}>
+                <label htmlFor="localidad" className={style.labels3}>
                     Localidad:
                 </label>
                 <select
@@ -238,7 +238,7 @@ const Pensiones = () => {
                 </select>
             </fieldset>
 
-            <label for="telefonoCelular" className={style.labels}>
+            <label htmlFor="telefonoCelular" className={style.labels}>
                 Teléfono Celular:
             </label>
             <input
@@ -254,7 +254,7 @@ const Pensiones = () => {
                 errors={state.errors}
             />
 
-            <label for="telefonoAlternativo" className={style.labels}>
+            <label htmlFor="telefonoAlternativo" className={style.labels}>
                 Teléfono Alternativo:
             </label>
             <input
@@ -270,7 +270,7 @@ const Pensiones = () => {
                 errors={state.errors}
             />
 
-            <label for="telefonoFamiliar" className={style.labels}>
+            <label htmlFor="telefonoFamiliar" className={style.labels}>
                 Teléfono de un Familiar:
             </label>
             <input
@@ -286,7 +286,7 @@ const Pensiones = () => {
                 errors={state.errors}
             />
 
-            <label for="correoElectronico" className={style.labels}>
+            <label htmlFor="correoElectronico" className={style.labels}>
                 Correo Electrónico:
             </label>
             <input
