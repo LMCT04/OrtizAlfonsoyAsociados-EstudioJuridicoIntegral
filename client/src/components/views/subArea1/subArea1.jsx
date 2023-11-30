@@ -207,7 +207,8 @@ const SubArea1 = () => {
                             "@media (max-width: 768px)": {
                                 display: "flex",
                                 flexDirection: "column",
-                                justifyContent:'normal'
+                                justifyContent:'normal',
+                                height: "auto",
                             },
                         }}
                     >
@@ -218,6 +219,11 @@ const SubArea1 = () => {
                                 marginLeft: "10%",
                                 marginRight: "8%",
                                 backgroundColor: "#888888",
+                                "@media (max-width: 1821px)": {
+                                    height:'78%',
+                                    marginTop:'5%',
+                                    marginBottom:'2.5%'
+                                },
                                 "@media (max-width: 768px)": {
                                     width: "100%",
                                     marginLeft: "0%",
@@ -258,7 +264,7 @@ const SubArea1 = () => {
                                 </Typography>
                                 <Box
                                     sx={{
-                                        marginTop: "5%",
+                                        marginTop: "2.5%",
                                     }}
                                 >
                                     <Accordion
@@ -276,6 +282,10 @@ const SubArea1 = () => {
                                             <Typography
                                                 sx={{
                                                     fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
                                                     "@media (max-width: 768px)":
                                                         {
                                                             fontSize: "3vw",
@@ -293,6 +303,10 @@ const SubArea1 = () => {
                                             <Typography
                                                 sx={{
                                                     fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
                                                     "@media (max-width: 768px)":
                                                         {
                                                             fontSize: "2.5vw",
@@ -319,6 +333,10 @@ const SubArea1 = () => {
                                             <Typography
                                                 sx={{
                                                     fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
                                                     "@media (max-width: 768px)":
                                                         {
                                                             fontSize: "3vw",
@@ -336,6 +354,10 @@ const SubArea1 = () => {
                                             <Typography
                                                 sx={{
                                                     fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
                                                     "@media (max-width: 768px)":
                                                         {
                                                             fontSize: "2.5vw",
@@ -362,6 +384,10 @@ const SubArea1 = () => {
                                             <Typography
                                                 sx={{
                                                     fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
                                                     "@media (max-width: 768px)":
                                                         {
                                                             fontSize: "3vw",
@@ -379,6 +405,10 @@ const SubArea1 = () => {
                                             <Typography
                                                 sx={{
                                                     fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
                                                     "@media (max-width: 768px)":
                                                         {
                                                             fontSize: "2.5vw",
@@ -399,12 +429,18 @@ const SubArea1 = () => {
                                 marginLeft: "8%",
                                 marginRight: "10%",
                                 backgroundColor: "#555555",
+                                "@media (max-width: 1821px)": {
+                                    height:'78%',
+                                    marginTop:'5%',
+                                    marginBottom:'2.5%'
+                                },
                                 "@media (max-width: 768px)": {
                                     width: "100%",
                                     marginLeft: "0%",
                                     marginRight: "0%",
                                     height: "35%",
-                                    marginTop:'5%'
+                                    marginTop:'5%',
+                                    marginBottom:'5%'
                                 },
                             }}
                         >
@@ -430,7 +466,7 @@ const SubArea1 = () => {
                                         marginTop: "2%",
                                         textAlign: "justify",
                                         fontSize: "0.9vw",
-                                        "@media (max-width: 768px)": {
+                                        "@media (max-width: 767px)": {
                                             fontSize: "3vw",
                                         },
                                     }}
@@ -440,7 +476,7 @@ const SubArea1 = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Footer />
+                    <Footer/>
                 </>
             )}
         </main>
