@@ -34,7 +34,7 @@ const PeriodoPrueba = () => {
                     name="consulta"
                     id="consulta"
                     readOnly
-                    defaultValue="Despido durante periodo de prueba"
+                    defaultValue="Despido"
                     className={style.inputDesactivate}
                 />
                 <ValidationError
