@@ -1,37 +1,37 @@
-.background{
+.background {
     display: flex;
     justify-content: center;
     color: #333333;
 }
 
-.form{
+.form {
     width: 40%;
-    height: 250vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
 }
 
-.labels{
+.labels {
     text-align: left;
     width: 95%;
 }
 
-.labels2{
+.labels2 {
     text-align: left;
     width: 95%;
     margin-left: 1.5%;
 }
 
-.labels3{
-    margin-right: 0.5%;
+.labels3 {
+    margin-right: 2%;
 }
 
-.inputs{
+.inputs {
     width: 96%;
-    height: 1.6%;
-    margin-bottom: 3%;
+    height: 5vh;
+    margin-bottom: 2vh;
     font-size: medium;
     text-indent: 2%;
     color: #333333;
@@ -39,96 +39,130 @@
     outline-color: #333333;
 }
 
-.inputDesactivate{
+.inputDesactivate {
     width: 96%;
-    height: 1.6%;
-    margin-bottom: 2.5%;
+    height: 5vh;
+    margin-bottom: 2vh;
     font-size: medium;
     cursor: default;
-    outline:0px;
+    outline: 0px;
     border: 1px solid #888888;
     text-indent: 2%;
     color: #333333;
 }
 
-.inputs2{
-    height: 45%;
-    text-indent: 2%;
+.inputs2 {
+    height: 4vh;
+    width: 10%;
+    text-indent: 4.5%;
     font-size: medium;
-    margin-right: 2%;
+    margin-right: 5%;
     color: #333333;
-    outline:0px;
+    outline: 0px;
     border: 1px solid #888888;
 }
 
-.selects{
-    height: 50%;
+.inputs3 {
+    height: 4vh;
+    width: 30%;
+    text-indent: 4.5%;
+    font-size: medium;
+    margin-right: 5%;
+    color: #333333;
+    outline: 0px;
+    border: 1px solid #888888;
+}
+
+.selects {
+    height: 4.4vh;
+    width: auto;
     font-size: medium;
     margin-right: 2%;
     border: 1px solid #888888;
     outline-color: #333333;
 }
 
-.selects2{
-    height: 24%;
+.selects2 {
+    height: 4.4vh;
+    width: 35%;
     margin-bottom: 2.5%;
     font-size: medium;
-    width: 35%;
     border: 1px solid #888888;
     outline-color: #333333;
 }
 
-.fieldSets{
+.selects3 {
+    height: 4.4vh;
+    width: 27.5%;
+    font-size: medium;
+    margin-right: 2%;
+    border: 1px solid #888888;
+    outline-color: #333333;
+}
+
+.fieldSets {
     display: flex;
-    width: 80%;
-    height: 4.15%;
+    width: 90.5%;
+    height: auto;
     justify-content: center;
     align-items: center;
     font-size: medium;
     border: none;
-    margin-bottom: 1%;
-    margin-top: 3%;
+    margin-top: 1vh;
+    margin-bottom: 2.5vh;
 }
 
 .fieldSets2 {
     display: flex;
     width: 80%;
-    height: 5.2%;
+    height: auto;
     justify-content: center;
     align-items: center;
     font-size: medium;
     border: none;
-    margin-bottom: 1%;
-    margin-top: 3%;
+    margin-top: 1vh;
+    margin-bottom: 2.5vh;
 }
 
-
-.textA{
-    height: 4.5%;
+.textA {
+    height: 10vh;
     width: 96%;
+    min-height: 10vh;
+    min-width: 96%;
+    max-height: 20vh;
+    max-width: 96%;
     margin-bottom: 3.5%;
     font-size: medium;
-    text-indent: 2%;
+    text-indent: 1%;
     color: #333333;
     border: 1px solid #888888;
     outline-color: #333333;
 }
 
 @media only screen and (max-width: 767px) {
-    .form {
+    .form{
         width: 95%;
     }
-    .selects2 {
-        width: 60%;
+    .fieldSets2{
+        width: 97%;
     }
-    .fieldSets {
+    .fieldSets{
         flex-direction: column;
         align-items: start;
-        width: 97%;
-        height: 7%;
-        margin-bottom: 3%;
     }
-    .inputDesactivate{
-        font-size: small;
+    .inputs3{
+        width: 50%;
+    }
+    .selects2{
+        width: 51.5%;
+    }
+    .selects3{
+        width: 51.5%;
+    }
+}
+
+@media only screen and (max-width: 1821px) {
+    .fieldSets {
+        width: 97%;
     }
 }

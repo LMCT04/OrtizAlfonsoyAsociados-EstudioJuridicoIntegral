@@ -1,12 +1,22 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./periodoPrueba.module.css";
+import { useNavigate } from "react-router-dom";
 
 const PeriodoPrueba = () => {
     const [state, handleSubmit] = useForm("xaygvgql");
 
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        navigate('/')
+
+        alert("¡Formulario enviado exitosamente!");
+    };
+
     if (state.succeeded) {
-        return <p>¡Gracias por unirte!</p>;
+        handleSuccess();
+        return null;
     }
 
     const currentYear = new Date().getFullYear();
@@ -143,7 +153,7 @@ const PeriodoPrueba = () => {
                         flexDirection: "column",
                         width: "95%",
                         alignItems: "flex-start",
-                        height: "8.5%",
+                        height: "auto",
                     }}
                 >
                     <label htmlFor="nacionalidad" className={style.labels2}>
@@ -190,14 +200,17 @@ const PeriodoPrueba = () => {
 
                 <fieldset className={style.fieldSets}>
                     <legend>Domicilio y Residencia</legend>
-                    <label htmlFor="domicilioParticular" className={style.labels3}>
+                    <label
+                        htmlFor="domicilioParticular"
+                        className={style.labels3}
+                    >
                         Domicilio Particular:
                     </label>
                     <input
                         type="text"
                         id="domicilioParticular"
                         name="domicilioParticular"
-                        className={style.inputs2}
+                        className={style.inputs3}
                         required
                     />
 
@@ -207,7 +220,7 @@ const PeriodoPrueba = () => {
                     <select
                         id="localidad"
                         name="localidad"
-                        className={style.selects}
+                        className={style.selects3}
                         required
                     >
                         <option value=""></option>
@@ -386,7 +399,10 @@ const PeriodoPrueba = () => {
                     </select>
                 </fieldset>
 
-                <label htmlFor="sueldo-en-mano-mas-alto" className={style.labels}>
+                <label
+                    htmlFor="sueldo-en-mano-mas-alto"
+                    className={style.labels}
+                >
                     Ultimo sueldo recibido:
                 </label>
                 <textarea
@@ -398,8 +414,8 @@ const PeriodoPrueba = () => {
 
                 <Box
                     sx={{
-                        marginBottom: "5%",
-                        marginTop: "2%",
+                        marginBottom: "5vh",
+                        marginTop: "2vh",
                     }}
                 >
                     <Button

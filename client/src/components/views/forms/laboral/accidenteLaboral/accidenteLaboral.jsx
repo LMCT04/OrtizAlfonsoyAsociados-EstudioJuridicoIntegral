@@ -2,13 +2,23 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./accidenteLaboral.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AccidenteLaboral = () => {
     const [state, handleSubmit] = useForm("xaygvgql");
     const [opcionSeleccionada, setOpcionSeleccionada] = useState("");
 
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        navigate('/')
+
+        alert("¡Formulario enviado exitosamente!");
+    };
+
     if (state.succeeded) {
-        return <p>¡Gracias por unirte!</p>;
+        handleSuccess();
+        return null;
     }
 
     const currentYear = new Date().getFullYear();
@@ -149,7 +159,7 @@ const AccidenteLaboral = () => {
                         flexDirection: "column",
                         width: "95%",
                         alignItems: "flex-start",
-                        height: "8.5%",
+                        height: "auto",
                     }}
                 >
                     <label htmlFor="nacionalidad" className={style.labels2}>
@@ -196,14 +206,17 @@ const AccidenteLaboral = () => {
 
                 <fieldset className={style.fieldSets}>
                     <legend>Domicilio y Residencia</legend>
-                    <label htmlFor="domicilioParticular" className={style.labels3}>
+                    <label
+                        htmlFor="domicilioParticular"
+                        className={style.labels3}
+                    >
                         Domicilio Particular:
                     </label>
                     <input
                         type="text"
                         id="domicilioParticular"
                         name="domicilioParticular"
-                        className={style.inputs2}
+                        className={style.inputs3}
                         required
                     />
 
@@ -392,7 +405,10 @@ const AccidenteLaboral = () => {
                     </select>
                 </fieldset>
 
-                <label htmlFor="sueldo-en-mano-mas-alto" className={style.labels}>
+                <label
+                    htmlFor="sueldo-en-mano-mas-alto"
+                    className={style.labels}
+                >
                     Ultimo sueldo recibido:
                 </label>
                 <textarea
@@ -438,8 +454,8 @@ const AccidenteLaboral = () => {
 
                 <Box
                     sx={{
-                        marginTop: "5%",
-                        marginBottom: "5%",
+                        marginBottom: "5vh",
+                        marginTop: "2vh",
                     }}
                 >
                     <Button

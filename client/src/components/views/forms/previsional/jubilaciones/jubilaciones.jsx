@@ -1,12 +1,21 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./jubilaciones.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Jubilaciones = () => {
     const [state, handleSubmit] = useForm("xaygvgql");
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        navigate('/')
+
+        alert("¡Formulario enviado exitosamente!");
+    };
 
     if (state.succeeded) {
-        return <p>¡Gracias por unirte!</p>;
+        handleSuccess();
+        return null;
     }
 
     const currentYear = new Date().getFullYear();
@@ -141,7 +150,7 @@ const Jubilaciones = () => {
                         flexDirection: "column",
                         width: "95%",
                         alignItems: "flex-start",
-                        height: "14%",
+                        height: "auto",
                     }}
                 >
                     <label htmlFor="nacionalidad" className={style.labels2}>
@@ -188,11 +197,14 @@ const Jubilaciones = () => {
 
                 <fieldset className={style.fieldSets}>
                     <legend>Domicilio y Residencia</legend>
-                    <label htmlFor="domicilioParticular" className={style.labels3}>
+                    <label
+                        htmlFor="domicilioParticular"
+                        className={style.labels3}
+                    >
                         Domicilio Particular:
                     </label>
                     <input
-                        className={style.inputs2}
+                        className={style.inputs3}
                         type="text"
                         id="domicilioParticular"
                         name="domicilioParticular"
@@ -304,8 +316,8 @@ const Jubilaciones = () => {
 
                 <Box
                     sx={{
-                        marginBottom: "5%",
-                        marginTop: "2%",
+                        marginBottom: "5vh",
+                        marginTop: "2vh",
                     }}
                 >
                     <Button

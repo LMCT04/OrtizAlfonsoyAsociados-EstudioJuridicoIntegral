@@ -1,12 +1,22 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./accidenteTransito.module.css";
+import { useNavigate } from "react-router-dom";
 
 const AccidenteTransito = () => {
     const [state, handleSubmit] = useForm("xaygvgql");
 
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        navigate('/')
+
+        alert("¡Formulario enviado exitosamente!");
+    };
+
     if (state.succeeded) {
-        return <p>¡Gracias por unirte!</p>;
+        handleSuccess();
+        return null;
     }
 
     const currentYear = new Date().getFullYear();
@@ -143,7 +153,7 @@ const AccidenteTransito = () => {
                         flexDirection: "column",
                         width: "95%",
                         alignItems: "flex-start",
-                        height: "8.5%",
+                        height: "auto",
                     }}
                 >
                     <label htmlFor="nacionalidad" className={style.labels2}>
@@ -197,7 +207,7 @@ const AccidenteTransito = () => {
                         type="text"
                         id="domicilioParticular"
                         name="domicilioParticular"
-                        className={style.inputs2}
+                        className={style.inputs3}
                         required
                     />
 
@@ -364,10 +374,10 @@ const AccidenteTransito = () => {
                     required
                 ></textarea>
 
-                <Box
+<Box
                     sx={{
-                        marginBottom: "5%",
-                        marginTop: "5%",
+                        marginBottom: "5vh",
+                        marginTop: "2vh",
                     }}
                 >
                     <Button
