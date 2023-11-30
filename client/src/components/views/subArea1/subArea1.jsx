@@ -74,13 +74,13 @@ const SubArea1 = () => {
                         <Box
                             sx={{
                                 height: "100%",
-                                width: "78.2%",
+                                width: "auto",
                                 "@media (max-width: 768px)": {
                                     width: "100%",
                                 },
                             }}
                         >
-                            <img src={img} alt="img" className={style.img} />
+                            {<img src={img} alt="img" className={style.img} />}
                         </Box>
                     </Box>
                     <Box
@@ -116,10 +116,14 @@ const SubArea1 = () => {
                         >
                             <Box
                                 sx={{
-                                    margin: "3%",
                                     display: "flex",
                                     flexDirection: "column",
                                     alignItems: "flex-start",
+                                    margin:'auto',
+                                    marginLeft:'2%',
+                                    "@media (max-width: 768px)": {
+                                        marginLeft:'0%',
+                                    },
                                 }}
                             >
                                 <Typography
@@ -127,6 +131,9 @@ const SubArea1 = () => {
                                         fontWeight: "bold",
                                         fontSize: "1.8vw",
                                         textAlign: "left",
+                                        "@media (max-width: 1821px)": {
+                                            fontSize: "1.6vw",
+                                        },
                                         "@media (max-width: 768px)": {
                                             fontSize: "5vw",
                                             textAlign: "center",
@@ -142,6 +149,9 @@ const SubArea1 = () => {
                                         marginTop: "2%",
                                         textAlign: "left",
                                         fontSize: "0.9vw",
+                                        "@media (max-width: 1821px)": {
+                                            fontSize: "0.8vw",
+                                        },
                                         "@media (max-width: 768px)": {
                                             fontSize: "3vw",
                                             textAlign: "center",
@@ -163,6 +173,7 @@ const SubArea1 = () => {
                                 justifyContent: "center",
                                 "@media (max-width: 768px)": {
                                     width: "100%",
+                                    height: "50%",
                                 },
                             }}
                         >
