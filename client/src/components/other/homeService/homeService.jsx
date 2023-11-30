@@ -84,6 +84,7 @@ const HomeService = () => {
                                             width: "100%",
                                             textAlign: "center",
                                             fontSize: "5vw",
+                                            color: "#555555",
                                         },
                                 }}
                             >
@@ -100,6 +101,7 @@ const HomeService = () => {
                                             width: "100%",
                                             textAlign: "justify",
                                             fontSize:'3.5vw',
+                                            color: "#555555",
                                         },
                                 }}
                             >
@@ -129,6 +131,7 @@ const HomeService = () => {
                                             width: "100%",
                                             textAlign: "center",
                                             fontSize: "5vw",
+                                            color: "#dee4e4",
                                         },
                                 }}
                             >
@@ -145,6 +148,7 @@ const HomeService = () => {
                                             width: "100%",
                                             textAlign: "justify",
                                             fontSize:'3.5vw',
+                                            color: "#dee4e4",
                                         },
                                 }}
                             >
