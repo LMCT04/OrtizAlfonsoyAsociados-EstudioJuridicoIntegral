@@ -5,4 +5,17 @@
 
 .img{
     width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1821px){
+    .img{
+        width: 81%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .img{
+        width: 100%;
+    }
 }
