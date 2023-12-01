@@ -43,7 +43,7 @@ Deberá descargar el proyecto de la rama "CodeSecurity". Al hacerlo, deberá seg
 4. Luego, podrá iniciar el proyecto con un 'npm start' desde './client'. Ahora podrá probar los formularios y le llegarán a su email que haya designado anteriormente.
 
 
-## Modo Oficial
+### Modo Oficial
 
 **Próximamente...**
 
