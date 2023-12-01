@@ -43,6 +43,17 @@ Deberá descargar el proyecto de la rama "CodeSecurity". Al hacerlo, deberá seg
 4. Luego, podrá iniciar el proyecto con un 'npm start' desde './client'. Ahora podrá probar los formularios y le llegarán a su email que haya designado anteriormente.
 
 
+## Modo Oficial
+
+Proximamente...
+
+**Próximamente...**
+
+---
+
+### Importante
+
+Por favor, tenga en cuenta que los formularios representan el servicio real. Les solicitamos amablemente que no los completen con información de prueba, ya que esto podría generar inconvenientes. El propósito de estos formularios es proporcionar un medio directo de contacto con el estudio jurídico para consultas y servicios genuinos.
 
 
 
