@@ -32,7 +32,7 @@ const Jubilaciones = () => {
                     className={style.inputDesactivate}
                     type="text"
                     name="consulta"
-                    id="consulta"
+                    id="Consulta"
                     readOnly
                     defaultValue="Jubilaciones"
                 />
@@ -49,7 +49,7 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="Nombre"
                     required
                 />
                 <ValidationError
@@ -65,7 +65,7 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="Apellido"
                     required
                 />
                 <ValidationError
@@ -81,7 +81,7 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="text"
                     id="dni"
-                    name="dni"
+                    name="DNI"
                     pattern="[0-9]*"
                     required
                 />
@@ -96,7 +96,7 @@ const Jubilaciones = () => {
                         className={style.inputs2}
                         type="number"
                         id="dia"
-                        name="dia-Nacimiento"
+                        name="Dia de Nacimiento"
                         min="1"
                         max="31"
                         step="1"
@@ -107,7 +107,7 @@ const Jubilaciones = () => {
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Nacimiento"
+                        name="Mes Nacimiento"
                         id="mes"
                         required
                         className={style.selects}
@@ -129,7 +129,7 @@ const Jubilaciones = () => {
 
                     <label className={style.labels3}>Año: </label>
                     <select
-                        name="Año-Nacimiento"
+                        name="Año Nacimiento"
                         id="año"
                         required
                         className={style.selects}
@@ -158,7 +158,7 @@ const Jubilaciones = () => {
                     </label>
                     <select
                         id="nacionalidad"
-                        name="nacionalidad"
+                        name="Nacionalidad"
                         required
                         className={style.selects2}
                     >
@@ -183,7 +183,7 @@ const Jubilaciones = () => {
                     </label>
                     <select
                         id="estadoCivil"
-                        name="estadoCivil"
+                        name="Estado Civil"
                         required
                         className={style.selects2}
                     >
@@ -207,7 +207,7 @@ const Jubilaciones = () => {
                         className={style.inputs3}
                         type="text"
                         id="domicilioParticular"
-                        name="domicilioParticular"
+                        name="Domicilio Particular"
                         required
                     />
 
@@ -216,7 +216,7 @@ const Jubilaciones = () => {
                     </label>
                     <select
                         id="localidad"
-                        name="localidad"
+                        name="Localidad"
                         required
                         className={style.selects}
                     >
@@ -257,7 +257,7 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="text"
                     id="telefonoCelular"
-                    name="telefonoCelular"
+                    name="Telefono Celular"
                     required
                 />
                 <ValidationError
@@ -273,7 +273,7 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="text"
                     id="telefonoAlternativo"
-                    name="telefonoAlternativo"
+                    name="Telefono Alternativo"
                     required
                 />
                 <ValidationError
@@ -294,7 +294,7 @@ const Jubilaciones = () => {
                 />
                 <ValidationError
                     prefix="Teléfono de un Familiar"
-                    field="telefonoFamiliar"
+                    field="Telefono Familiar"
                     errors={state.errors}
                 />
 
@@ -305,7 +305,7 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="email"
                     id="correoElectronico"
-                    name="correoElectronico"
+                    name="Correo Electronico"
                     required
                 />
                 <ValidationError
