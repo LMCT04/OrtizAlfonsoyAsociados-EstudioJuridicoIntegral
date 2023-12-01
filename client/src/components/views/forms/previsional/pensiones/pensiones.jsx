@@ -32,7 +32,7 @@ const Pensiones = () => {
                 <input
                     className={style.inputDesactivate}
                     type="text"
-                    name="consulta"
+                    name="Consulta"
                     id="consulta"
                     readOnly
                     defaultValue="Pensiones"
@@ -50,7 +50,7 @@ const Pensiones = () => {
                     className={style.inputs}
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="Nombre"
                     required
                 />
                 <ValidationError
@@ -66,7 +66,7 @@ const Pensiones = () => {
                     className={style.inputs}
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="Apellido"
                     required
                 />
                 <ValidationError
@@ -82,7 +82,7 @@ const Pensiones = () => {
                     className={style.inputs}
                     type="text"
                     id="dni"
-                    name="dni"
+                    name="DNI"
                     pattern="[0-9]*"
                     required
                 />
@@ -97,7 +97,7 @@ const Pensiones = () => {
                         className={style.inputs2}
                         type="number"
                         id="dia"
-                        name="dia-Nacimiento"
+                        name="Dia de Nacimiento"
                         min="1"
                         max="31"
                         step="1"
@@ -108,7 +108,7 @@ const Pensiones = () => {
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Nacimiento"
+                        name="Mes de Nacimiento"
                         id="mes"
                         required
                         className={style.selects}
@@ -130,7 +130,7 @@ const Pensiones = () => {
 
                     <label className={style.labels3}>Año: </label>
                     <select
-                        name="Año-Nacimiento"
+                        name="Año de Nacimiento"
                         id="año"
                         required
                         className={style.selects}
@@ -159,7 +159,7 @@ const Pensiones = () => {
                     </label>
                     <select
                         id="nacionalidad"
-                        name="nacionalidad"
+                        name="Nacionalidad"
                         required
                         className={style.selects2}
                     >
@@ -184,7 +184,7 @@ const Pensiones = () => {
                     </label>
                     <select
                         id="estadoCivil"
-                        name="estadoCivil"
+                        name="Estado Civil"
                         required
                         className={style.selects2}
                     >
@@ -208,7 +208,7 @@ const Pensiones = () => {
                         className={style.inputs3}
                         type="text"
                         id="domicilioParticular"
-                        name="domicilioParticular"
+                        name="Domicilio Particular"
                         required
                     />
 
@@ -217,7 +217,7 @@ const Pensiones = () => {
                     </label>
                     <select
                         id="localidad"
-                        name="localidad"
+                        name="Localidad"
                         required
                         className={style.selects}
                     >
@@ -258,7 +258,7 @@ const Pensiones = () => {
                     className={style.inputs}
                     type="text"
                     id="telefonoCelular"
-                    name="telefonoCelular"
+                    name="Telefono Celular"
                     required
                 />
                 <ValidationError
@@ -273,8 +273,8 @@ const Pensiones = () => {
                 <input
                     className={style.inputs}
                     type="text"
-                    id="telefonoAlternativo"
-                    name="telefonoAlternativo"
+                    id="elefonoAlternativo"
+                    name="Telefono Alternativo"
                     required
                 />
                 <ValidationError
@@ -290,7 +290,7 @@ const Pensiones = () => {
                     className={style.inputs}
                     type="text"
                     id="telefonoFamiliar"
-                    name="telefonoFamiliar"
+                    name="Telefono Familiar"
                     required
                 />
                 <ValidationError
@@ -306,7 +306,7 @@ const Pensiones = () => {
                     className={style.inputs}
                     type="email"
                     id="correoElectronico"
-                    name="correoElectronico"
+                    name="Correo Electronico"
                     required
                 />
                 <ValidationError
@@ -326,6 +326,16 @@ const Pensiones = () => {
                         variant="contained"
                         color="primary"
                         disabled={state.submitting}
+                        sx={{
+                            backgroundColor: "#555555",
+                            color: "#fff",
+                            transition: "transform 0.3s ease",
+                            "&:hover": {
+                                backgroundColor: "#666666",
+                                transform: "scale(1.05)",
+                                boxShadow: "5px 5px 12px black",
+                            },
+                        }}
                     >
                         Enviar Consulta
                     </Button>

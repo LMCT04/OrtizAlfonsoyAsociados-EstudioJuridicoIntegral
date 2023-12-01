@@ -24,13 +24,16 @@ const FormCivil = () => {
                 sx={{
                     marginTop:'0',
                     "& .Mui-selected": {
-                        color: "currentColor",
+                        color: "#333333"
                     },
                     "& .MuiTab-root": {
                         "&:focus": {
                             outline: "none",
                             color: "#333333"
                         },
+                        "&:disabled":{
+                            color:'currentColor'
+                        }
                     },
                 }}
             >

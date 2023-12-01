@@ -9,7 +9,7 @@ const AccidenteTransito = () => {
     const navigate = useNavigate();
 
     const handleSuccess = () => {
-        navigate('/')
+        navigate("/");
 
         alert("¡Formulario enviado exitosamente!");
     };
@@ -31,7 +31,7 @@ const AccidenteTransito = () => {
                 </label>
                 <input
                     type="text"
-                    name="consulta"
+                    name="Consulta"
                     id="consulta"
                     readOnly
                     defaultValue="Accidente de Transito"
@@ -49,7 +49,7 @@ const AccidenteTransito = () => {
                 <input
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="Nombre"
                     className={style.inputs}
                     required
                 />
@@ -65,7 +65,7 @@ const AccidenteTransito = () => {
                 <input
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="Apellido"
                     className={style.inputs}
                     required
                 />
@@ -81,7 +81,7 @@ const AccidenteTransito = () => {
                 <input
                     type="text"
                     id="dni"
-                    name="dni"
+                    name="DNI"
                     pattern="[0-9]*"
                     className={style.inputs}
                     required
@@ -96,7 +96,7 @@ const AccidenteTransito = () => {
                     <input
                         type="number"
                         id="dia"
-                        name="dia-Nacimiento"
+                        name="Dia de Nacimiento"
                         min="1"
                         max="31"
                         step="1"
@@ -108,7 +108,7 @@ const AccidenteTransito = () => {
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Nacimiento"
+                        name="Mes de Nacimiento"
                         id="mes"
                         className={style.selects}
                         required
@@ -132,7 +132,7 @@ const AccidenteTransito = () => {
                         Año:{" "}
                     </label>
                     <select
-                        name="Año-Nacimiento"
+                        name="Año de Nacimiento"
                         id="año"
                         className={style.selects}
                         required
@@ -161,7 +161,7 @@ const AccidenteTransito = () => {
                     </label>
                     <select
                         id="nacionalidad"
-                        name="nacionalidad"
+                        name="Nacionalidad"
                         className={style.selects2}
                         required
                     >
@@ -186,7 +186,7 @@ const AccidenteTransito = () => {
                     </label>
                     <select
                         id="estadoCivil"
-                        name="estadoCivil"
+                        name="Estado Civil"
                         className={style.selects2}
                         required
                     >
@@ -200,13 +200,16 @@ const AccidenteTransito = () => {
 
                 <fieldset className={style.fieldSets}>
                     <legend>Domicilio y Residencia</legend>
-                    <label htmlFor="domicilioParticular" className={style.labels3}>
+                    <label
+                        htmlFor="domicilioParticular"
+                        className={style.labels3}
+                    >
                         Domicilio Particular:
                     </label>
                     <input
                         type="text"
                         id="domicilioParticular"
-                        name="domicilioParticular"
+                        name="Domicilio Particular"
                         className={style.inputs3}
                         required
                     />
@@ -216,7 +219,7 @@ const AccidenteTransito = () => {
                     </label>
                     <select
                         id="localidad"
-                        name="localidad"
+                        name="Localidad"
                         className={style.selects}
                         required
                     >
@@ -256,7 +259,7 @@ const AccidenteTransito = () => {
                 <input
                     type="text"
                     id="telefonoCelular"
-                    name="telefonoCelular"
+                    name="Telefono Celular"
                     className={style.inputs}
                     required
                 />
@@ -272,7 +275,7 @@ const AccidenteTransito = () => {
                 <input
                     type="text"
                     id="telefonoAlternativo"
-                    name="telefonoAlternativo"
+                    name="Telefono Alternativo"
                     className={style.inputs}
                     required
                 />
@@ -288,7 +291,7 @@ const AccidenteTransito = () => {
                 <input
                     type="text"
                     id="telefonoFamiliar"
-                    name="telefonoFamiliar"
+                    name="Telefono Familiar"
                     className={style.inputs}
                     required
                 />
@@ -304,7 +307,7 @@ const AccidenteTransito = () => {
                 <input
                     type="email"
                     id="correoElectronico"
-                    name="correoElectronico"
+                    name="Correo Electronico"
                     className={style.inputs}
                     required
                 />
@@ -319,7 +322,7 @@ const AccidenteTransito = () => {
                 </label>
                 <textarea
                     id="lugar-fecha-del-siniestro"
-                    name="lugar-date-accident"
+                    name="Lugar y Fecha del Siniestro"
                     className={style.textA}
                     required
                 ></textarea>
@@ -329,7 +332,7 @@ const AccidenteTransito = () => {
                 </label>
                 <textarea
                     id="detalle-del-accidente"
-                    name="detail-accident"
+                    name="Detalle del Siniestro"
                     className={style.textA}
                     required
                 ></textarea>
@@ -339,7 +342,7 @@ const AccidenteTransito = () => {
                 </label>
                 <textarea
                     id="patente"
-                    name="tu-patente"
+                    name="Patente del Cliente"
                     className={style.textA}
                     required
                 ></textarea>
@@ -349,7 +352,7 @@ const AccidenteTransito = () => {
                 </label>
                 <textarea
                     id="seguro"
-                    name="tu-seguro"
+                    name="Seguro del Cliente"
                     className={style.textA}
                     required
                 ></textarea>
@@ -359,7 +362,7 @@ const AccidenteTransito = () => {
                 </label>
                 <textarea
                     id="patente-del-chocante"
-                    name="patente-del-chocante"
+                    name="Patente del chocante"
                     className={style.textA}
                     required
                 ></textarea>
@@ -369,12 +372,12 @@ const AccidenteTransito = () => {
                 </label>
                 <textarea
                     id="seguro-del-chocante"
-                    name="seguro-del-chocante"
+                    name="Seguro del chocante"
                     className={style.textA}
                     required
                 ></textarea>
 
-<Box
+                <Box
                     sx={{
                         marginBottom: "5vh",
                         marginTop: "2vh",
@@ -385,6 +388,16 @@ const AccidenteTransito = () => {
                         variant="contained"
                         color="primary"
                         disabled={state.submitting}
+                        sx={{
+                            backgroundColor: "#555555",
+                            color: "#fff",
+                            transition: "transform 0.3s ease",
+                            "&:hover": {
+                                backgroundColor: "#666666",
+                                transform: "scale(1.05)",
+                                boxShadow: "5px 5px 12px black",
+                            },
+                        }}
                     >
                         Enviar Consulta
                     </Button>

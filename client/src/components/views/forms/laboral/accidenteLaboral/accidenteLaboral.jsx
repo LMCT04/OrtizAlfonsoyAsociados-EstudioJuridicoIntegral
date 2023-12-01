@@ -37,7 +37,7 @@ const AccidenteLaboral = () => {
                 </label>
                 <input
                     type="text"
-                    name="consulta"
+                    name="Consulta"
                     id="consulta"
                     readOnly
                     defaultValue="Accidente Laboral/Enfermedad y falta de atencion medica"
@@ -55,7 +55,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="Nombre"
                     className={style.inputs}
                     required
                 />
@@ -71,7 +71,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="Apellido"
                     className={style.inputs}
                     required
                 />
@@ -87,7 +87,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="text"
                     id="dni"
-                    name="dni"
+                    name="DNI"
                     pattern="[0-9]*"
                     className={style.inputs}
                     required
@@ -102,7 +102,7 @@ const AccidenteLaboral = () => {
                     <input
                         type="number"
                         id="dia"
-                        name="dia-Nacimiento"
+                        name="Dia de Nacimiento"
                         min="1"
                         max="31"
                         step="1"
@@ -114,7 +114,7 @@ const AccidenteLaboral = () => {
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Nacimiento"
+                        name="Mes de Nacimiento"
                         id="mes"
                         className={style.selects}
                         required
@@ -138,7 +138,7 @@ const AccidenteLaboral = () => {
                         Año:{" "}
                     </label>
                     <select
-                        name="Año-Nacimiento"
+                        name="Año de Nacimiento"
                         id="año"
                         className={style.selects}
                         required
@@ -167,7 +167,7 @@ const AccidenteLaboral = () => {
                     </label>
                     <select
                         id="nacionalidad"
-                        name="nacionalidad"
+                        name="Nacionalidad"
                         className={style.selects2}
                         required
                     >
@@ -192,7 +192,7 @@ const AccidenteLaboral = () => {
                     </label>
                     <select
                         id="estadoCivil"
-                        name="estadoCivil"
+                        name="Estado Civil"
                         className={style.selects2}
                         required
                     >
@@ -215,7 +215,7 @@ const AccidenteLaboral = () => {
                     <input
                         type="text"
                         id="domicilioParticular"
-                        name="domicilioParticular"
+                        name="Domicilio Particular"
                         className={style.inputs3}
                         required
                     />
@@ -225,7 +225,7 @@ const AccidenteLaboral = () => {
                     </label>
                     <select
                         id="localidad"
-                        name="localidad"
+                        name="Localidad"
                         className={style.selects}
                         required
                     >
@@ -265,7 +265,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="text"
                     id="telefonoCelular"
-                    name="telefonoCelular"
+                    name="Telefono Celular"
                     className={style.inputs}
                     required
                 />
@@ -281,7 +281,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="text"
                     id="telefonoAlternativo"
-                    name="telefonoAlternativo"
+                    name="Telefono Alternativo"
                     className={style.inputs}
                     required
                 />
@@ -297,7 +297,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="text"
                     id="telefonoFamiliar"
-                    name="telefonoFamiliar"
+                    name="Telefono Familiar"
                     className={style.inputs}
                     required
                 />
@@ -313,7 +313,7 @@ const AccidenteLaboral = () => {
                 <input
                     type="email"
                     id="correoElectronico"
-                    name="correoElectronico"
+                    name="Correo Electronico"
                     className={style.inputs}
                     required
                 />
@@ -328,7 +328,7 @@ const AccidenteLaboral = () => {
                 </label>
                 <textarea
                     id="tareas"
-                    name="tareas"
+                    name="Tareas Laborales"
                     className={style.textA}
                     required
                 ></textarea>
@@ -341,7 +341,7 @@ const AccidenteLaboral = () => {
                 </label>
                 <textarea
                     id="días-y-horarios-de-trabajo"
-                    name="días-y-horarios-de-trabajo"
+                    name="Días y horarios de jornada laboral"
                     className={style.textA}
                     required
                 ></textarea>
@@ -355,7 +355,7 @@ const AccidenteLaboral = () => {
                     <input
                         type="number"
                         id="diaIngreso"
-                        name="dia-Ingreso"
+                        name="Dia de Ingreso Laboral"
                         min="1"
                         max="31"
                         step="1"
@@ -367,7 +367,7 @@ const AccidenteLaboral = () => {
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Ingreso"
+                        name="Mes de Ingreso Laboral"
                         id="mesIngreso"
                         className={style.selects}
                         required
@@ -391,7 +391,7 @@ const AccidenteLaboral = () => {
                         Año:{" "}
                     </label>
                     <select
-                        name="Año-Ingreso"
+                        name="Año de Ingreso Laboral"
                         id="añoIngreso"
                         className={style.selects}
                         required
@@ -413,7 +413,7 @@ const AccidenteLaboral = () => {
                 </label>
                 <textarea
                     id="sueldo-en-mano-mas-alto"
-                    name="sueldo-en-mano-mas-alto"
+                    name="Ultimo sueldo recibido"
                     className={style.textA}
                     required
                 ></textarea>
@@ -447,7 +447,7 @@ const AccidenteLaboral = () => {
                 </label>
                 <textarea
                     id="Breve-Resumen-del-Caso"
-                    name="breve-resumen-del-caso"
+                    name="Breve resumen del caso"
                     className={style.textA}
                     required
                 ></textarea>
@@ -463,6 +463,16 @@ const AccidenteLaboral = () => {
                         variant="contained"
                         color="primary"
                         disabled={state.submitting}
+                        sx={{
+                            backgroundColor: "#555555",
+                            color: "#fff",
+                            transition: "transform 0.3s ease",
+                            "&:hover": {
+                                backgroundColor: "#666666",
+                                transform: "scale(1.05)",
+                                boxShadow: "5px 5px 12px black",
+                            },
+                        }}
                     >
                         Enviar Consulta
                     </Button>

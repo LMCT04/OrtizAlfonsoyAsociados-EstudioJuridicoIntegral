@@ -107,7 +107,7 @@ const Jubilaciones = () => {
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes Nacimiento"
+                        name="Mes de Nacimiento"
                         id="mes"
                         required
                         className={style.selects}
@@ -129,7 +129,7 @@ const Jubilaciones = () => {
 
                     <label className={style.labels3}>Año: </label>
                     <select
-                        name="Año Nacimiento"
+                        name="Año de Nacimiento"
                         id="año"
                         required
                         className={style.selects}
@@ -325,6 +325,16 @@ const Jubilaciones = () => {
                         variant="contained"
                         color="primary"
                         disabled={state.submitting}
+                        sx={{
+                            backgroundColor: "#555555",
+                            color: "#fff",
+                            transition: "transform 0.3s ease",
+                            "&:hover": {
+                                backgroundColor: "#666666",
+                                transform: "scale(1.05)",
+                                boxShadow: "5px 5px 12px black",
+                            },
+                        }}
                     >
                         Enviar Consulta
                     </Button>
