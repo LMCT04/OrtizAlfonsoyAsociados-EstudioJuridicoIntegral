@@ -2,10 +2,9 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./accidenteTransito.module.css";
 import { useNavigate } from "react-router-dom";
-import config from '../../../../../../config'
 
 const AccidenteTransito = () => {
-    const [state, handleSubmit] = useForm(config.FormsApiKey);
+    const [state, handleSubmit] = useForm("xaygvgql");
 
     const navigate = useNavigate();
 
