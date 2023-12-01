@@ -45,8 +45,6 @@ Deberá descargar el proyecto de la rama "CodeSecurity". Al hacerlo, deberá seg
 
 ## Modo Oficial
 
-Proximamente...
-
 **Próximamente...**
 
 ---
