@@ -3,9 +3,10 @@ import { Button, Box } from "@mui/material";
 import style from "./accidenteLaboral.module.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import config from '../../../../../../config'
 
 const AccidenteLaboral = () => {
-    const [state, handleSubmit] = useForm("xaygvgql");
+    const [state, handleSubmit] = useForm(config.FormsApiKey);
     const [opcionSeleccionada, setOpcionSeleccionada] = useState("");
 
     const navigate = useNavigate();

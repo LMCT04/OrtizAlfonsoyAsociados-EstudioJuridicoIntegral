@@ -2,9 +2,10 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./jubilaciones.module.css";
 import { useNavigate } from "react-router-dom";
+import config from '../../../../../../config'
 
 const Jubilaciones = () => {
-    const [state, handleSubmit] = useForm("xaygvgql");
+    const [state, handleSubmit] = useForm(config.FormsApiKey);
     const navigate = useNavigate();
 
     const handleSuccess = () => {
@@ -31,8 +32,8 @@ const Jubilaciones = () => {
                 <input
                     className={style.inputDesactivate}
                     type="text"
-                    name="consulta"
-                    id="Consulta"
+                    name="Consulta"
+                    id="consulta"
                     readOnly
                     defaultValue="Jubilaciones"
                 />
@@ -289,12 +290,12 @@ const Jubilaciones = () => {
                     className={style.inputs}
                     type="text"
                     id="telefonoFamiliar"
-                    name="telefonoFamiliar"
+                    name="Telefono Familiar"
                     required
                 />
                 <ValidationError
                     prefix="Teléfono de un Familiar"
-                    field="Telefono Familiar"
+                    field="telefonoFamiliar"
                     errors={state.errors}
                 />
 
