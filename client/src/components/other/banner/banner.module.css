@@ -21,6 +21,8 @@
     background-position: center center;
 }
 
+/*#dee4e4*/
+
 .logoBanner{
     height: 100%;
 }
@@ -33,4 +35,20 @@
 .icon{
     position: absolute;
     top: 592px;
+}
+
+@media only screen and (max-width:1821px) {
+    
+}
+
+@media only screen and (max-width:767px) {
+    .slideBG1{
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+    }
+
+    .slideBG2{
+        height: 65vh;
+    }
 }

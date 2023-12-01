@@ -12,7 +12,10 @@ const NavBar = () => {
                     display:'flex',
                     justifyContent:'center',
                     alignItems:'center',
-                    overflow:'hidden'
+                    overflow:'hidden',
+                    '@media (max-width: 768px)': {
+                        width: '50%',
+                    },
                 }}
             >
                 <img src={logo} alt='logo' className={style.logo} />

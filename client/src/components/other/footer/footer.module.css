@@ -1,12 +1,23 @@
-.background{
-    height: 45.3vh;
+.background {
+    height: 45vh;
     background-color: #211b1b;
     display: flex;
     align-items: center;
 }
 
 .logo {
-    position: relative;
-    max-width: 85%;
-    height: auto;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        max-width: 100%;
+    }
+
+    .background {
+        height: 29vh;
+    }
+
 }

@@ -1,9 +1,20 @@
 .background{
-    height: 300vh;
+    height: auto;
     margin-top: 18vh;
     background-color: white;
 }
 
 .photo{
     height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .background {
+        height: auto; 
+        margin-top: 18vh; 
+    }
+
+    .photo {
+        
+    }
 }

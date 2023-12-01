@@ -1,5 +1,5 @@
 .background {
-    height: 18vh;
+    height: 18%;
     background-color: #dee4e4;
     display: flex;
     justify-content: center;
@@ -15,4 +15,20 @@
     max-width: 100%;
     height: auto;
     top: -20px;
+}
+
+@media only screen and (max-width:1821px) {
+    .background{
+        height: 18%;
+    }
+    .logo{
+        max-width: 80%;
+        top: -15px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .logo{
+        max-width: 100%;
+    }
 }

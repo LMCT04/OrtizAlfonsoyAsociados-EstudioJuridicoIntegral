@@ -2,13 +2,24 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./accidenteLaboral.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import config from '../../../../../../config'
 
 const AccidenteLaboral = () => {
-    const [state, handleSubmit] = useForm("xaygvgql");
+    const [state, handleSubmit] = useForm(config.FormsApiKey);
     const [opcionSeleccionada, setOpcionSeleccionada] = useState("");
 
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        navigate('/')
+
+        alert("¡Formulario enviado exitosamente!");
+    };
+
     if (state.succeeded) {
-        return <p>¡Gracias por unirte!</p>;
+        handleSuccess();
+        return null;
     }
 
     const currentYear = new Date().getFullYear();
@@ -22,12 +33,12 @@ const AccidenteLaboral = () => {
     return (
         <main className={style.background}>
             <form onSubmit={handleSubmit} className={style.form}>
-                <label for="consulta" className={style.labels}>
+                <label htmlFor="consulta" className={style.labels}>
                     Tipo de Consulta:
                 </label>
                 <input
                     type="text"
-                    name="consulta"
+                    name="Consulta"
                     id="consulta"
                     readOnly
                     defaultValue="Accidente Laboral/Enfermedad y falta de atencion medica"
@@ -39,13 +50,13 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="nombre" className={style.labels}>
+                <label htmlFor="nombre" className={style.labels}>
                     Nombre:
                 </label>
                 <input
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="Nombre"
                     className={style.inputs}
                     required
                 />
@@ -55,13 +66,13 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="apellido" className={style.labels}>
+                <label htmlFor="apellido" className={style.labels}>
                     Apellido:
                 </label>
                 <input
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="Apellido"
                     className={style.inputs}
                     required
                 />
@@ -71,28 +82,28 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="dni" className={style.labels}>
+                <label htmlFor="dni" className={style.labels}>
                     DNI:
                 </label>
                 <input
                     type="text"
                     id="dni"
-                    name="dni"
+                    name="DNI"
                     pattern="[0-9]*"
                     className={style.inputs}
                     required
                 />
 
-                <fieldset className={style.fieldSets}>
+                <fieldset className={style.fieldSets2}>
                     <legend>Fecha de Nacimiento</legend>
 
-                    <label for="dia" className={style.labels3}>
+                    <label htmlFor="dia" className={style.labels3}>
                         Dia:{" "}
                     </label>
                     <input
                         type="number"
                         id="dia"
-                        name="dia-Nacimiento"
+                        name="Dia de Nacimiento"
                         min="1"
                         max="31"
                         step="1"
@@ -100,16 +111,16 @@ const AccidenteLaboral = () => {
                         required
                     />
 
-                    <label for="mes" className={style.labels3}>
+                    <label htmlFor="mes" className={style.labels3}>
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Nacimiento"
+                        name="Mes de Nacimiento"
                         id="mes"
                         className={style.selects}
                         required
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Enero">Enero</option>
                         <option value="Febrero">Febrero</option>
                         <option value="Marzo">Marzo</option>
@@ -124,16 +135,16 @@ const AccidenteLaboral = () => {
                         <option value="Diciembre">Diciembre</option>
                     </select>
 
-                    <label for="año" className={style.labels3}>
+                    <label htmlFor="año" className={style.labels3}>
                         Año:{" "}
                     </label>
                     <select
-                        name="Año-Nacimiento"
+                        name="Año de Nacimiento"
                         id="año"
                         className={style.selects}
                         required
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         {years.map((year) => (
                             <option key={year} value={year}>
                                 {year}
@@ -149,19 +160,19 @@ const AccidenteLaboral = () => {
                         flexDirection: "column",
                         width: "95%",
                         alignItems: "flex-start",
-                        height: "8.5%",
+                        height: "auto",
                     }}
                 >
-                    <label for="nacionalidad" className={style.labels2}>
+                    <label htmlFor="nacionalidad" className={style.labels2}>
                         Nacionalidad:
                     </label>
                     <select
                         id="nacionalidad"
-                        name="nacionalidad"
+                        name="Nacionalidad"
                         className={style.selects2}
                         required
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Argentina">Argentina</option>
                         <option value="Uruguay">Uruguay</option>
                         <option value="Chile">Chile</option>
@@ -177,16 +188,16 @@ const AccidenteLaboral = () => {
                         <option value="Otros">Otros</option>
                     </select>
 
-                    <label for="estadoCivil" className={style.labels2}>
+                    <label htmlFor="estadoCivil" className={style.labels2}>
                         Estado Civil:
                     </label>
                     <select
                         id="estadoCivil"
-                        name="estadoCivil"
+                        name="Estado Civil"
                         className={style.selects2}
                         required
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Soltero">Soltero</option>
                         <option value="Casado">Casado</option>
                         <option value="Viudo">Viudo</option>
@@ -196,23 +207,26 @@ const AccidenteLaboral = () => {
 
                 <fieldset className={style.fieldSets}>
                     <legend>Domicilio y Residencia</legend>
-                    <label for="domicilioParticular" className={style.labels3}>
+                    <label
+                        htmlFor="domicilioParticular"
+                        className={style.labels3}
+                    >
                         Domicilio Particular:
                     </label>
                     <input
                         type="text"
                         id="domicilioParticular"
-                        name="domicilioParticular"
-                        className={style.inputs2}
+                        name="Domicilio Particular"
+                        className={style.inputs3}
                         required
                     />
 
-                    <label for="localidad" className={style.labels3}>
+                    <label htmlFor="localidad" className={style.labels3}>
                         Localidad:
                     </label>
                     <select
                         id="localidad"
-                        name="localidad"
+                        name="Localidad"
                         className={style.selects}
                         required
                     >
@@ -246,13 +260,13 @@ const AccidenteLaboral = () => {
                     </select>
                 </fieldset>
 
-                <label for="telefonoCelular" className={style.labels}>
+                <label htmlFor="telefonoCelular" className={style.labels}>
                     Teléfono Celular:
                 </label>
                 <input
                     type="text"
                     id="telefonoCelular"
-                    name="telefonoCelular"
+                    name="Telefono Celular"
                     className={style.inputs}
                     required
                 />
@@ -262,13 +276,13 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="telefonoAlternativo" className={style.labels}>
+                <label htmlFor="telefonoAlternativo" className={style.labels}>
                     Teléfono Alternativo:
                 </label>
                 <input
                     type="text"
                     id="telefonoAlternativo"
-                    name="telefonoAlternativo"
+                    name="Telefono Alternativo"
                     className={style.inputs}
                     required
                 />
@@ -278,13 +292,13 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="telefonoFamiliar" className={style.labels}>
+                <label htmlFor="telefonoFamiliar" className={style.labels}>
                     Teléfono de un Familiar:
                 </label>
                 <input
                     type="text"
                     id="telefonoFamiliar"
-                    name="telefonoFamiliar"
+                    name="Telefono Familiar"
                     className={style.inputs}
                     required
                 />
@@ -294,13 +308,13 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="correoElectronico" className={style.labels}>
+                <label htmlFor="correoElectronico" className={style.labels}>
                     Correo Electrónico:
                 </label>
                 <input
                     type="email"
                     id="correoElectronico"
-                    name="correoElectronico"
+                    name="Correo Electronico"
                     className={style.inputs}
                     required
                 />
@@ -310,39 +324,39 @@ const AccidenteLaboral = () => {
                     errors={state.errors}
                 />
 
-                <label for="tareas" className={style.labels}>
+                <label htmlFor="tareas" className={style.labels}>
                     Tareas Laborales:
                 </label>
                 <textarea
                     id="tareas"
-                    name="tareas"
+                    name="Tareas Laborales"
                     className={style.textA}
                     required
                 ></textarea>
 
                 <label
-                    for="días-y-horarios-de-trabajo"
+                    htmlFor="días-y-horarios-de-trabajo"
                     className={style.labels}
                 >
                     Días y horarios de jornada laboral:
                 </label>
                 <textarea
                     id="días-y-horarios-de-trabajo"
-                    name="días-y-horarios-de-trabajo"
+                    name="Días y horarios de jornada laboral"
                     className={style.textA}
                     required
                 ></textarea>
 
-                <fieldset className={style.fieldSets}>
+                <fieldset className={style.fieldSets2}>
                     <legend>Fecha de Ingreso Laboral</legend>
 
-                    <label for="diaIngreso" className={style.labels3}>
+                    <label htmlFor="diaIngreso" className={style.labels3}>
                         Dia:{" "}
                     </label>
                     <input
                         type="number"
                         id="diaIngreso"
-                        name="dia-Ingreso"
+                        name="Dia de Ingreso Laboral"
                         min="1"
                         max="31"
                         step="1"
@@ -350,16 +364,16 @@ const AccidenteLaboral = () => {
                         required
                     />
 
-                    <label for="mesIngreso" className={style.labels3}>
+                    <label htmlFor="mesIngreso" className={style.labels3}>
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Ingreso"
+                        name="Mes de Ingreso Laboral"
                         id="mesIngreso"
                         className={style.selects}
                         required
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Enero">Enero</option>
                         <option value="Febrero">Febrero</option>
                         <option value="Marzo">Marzo</option>
@@ -374,16 +388,16 @@ const AccidenteLaboral = () => {
                         <option value="Diciembre">Diciembre</option>
                     </select>
 
-                    <label for="añoIngreso" className={style.labels3}>
+                    <label htmlFor="añoIngreso" className={style.labels3}>
                         Año:{" "}
                     </label>
                     <select
-                        name="Año-Ingreso"
+                        name="Año de Ingreso Laboral"
                         id="añoIngreso"
                         className={style.selects}
                         required
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         {years.map((year) => (
                             <option key={year} value={year}>
                                 {year}
@@ -392,17 +406,20 @@ const AccidenteLaboral = () => {
                     </select>
                 </fieldset>
 
-                <label for="sueldo-en-mano-mas-alto" className={style.labels}>
+                <label
+                    htmlFor="sueldo-en-mano-mas-alto"
+                    className={style.labels}
+                >
                     Ultimo sueldo recibido:
                 </label>
                 <textarea
                     id="sueldo-en-mano-mas-alto"
-                    name="sueldo-en-mano-mas-alto"
+                    name="Ultimo sueldo recibido"
                     className={style.textA}
                     required
                 ></textarea>
 
-                <fieldset className={style.fieldSets}>
+                <fieldset className={style.fieldSets2}>
                     <legend>Reclamo pendiente ante la ART:</legend>
                     <label className={style.labels3}>
                         <input
@@ -426,20 +443,20 @@ const AccidenteLaboral = () => {
                     </label>
                 </fieldset>
 
-                <label for="breve-resumen-del-caso" className={style.label}>
+                <label htmlFor="breve-resumen-del-caso" className={style.label}>
                     Breve resumen del caso:
                 </label>
                 <textarea
                     id="Breve-Resumen-del-Caso"
-                    name="breve-resumen-del-caso"
+                    name="Breve resumen del caso"
                     className={style.textA}
                     required
                 ></textarea>
 
                 <Box
                     sx={{
-                        marginTop: "5%",
-                        marginBottom: "5%",
+                        marginBottom: "5vh",
+                        marginTop: "2vh",
                     }}
                 >
                     <Button
@@ -447,6 +464,16 @@ const AccidenteLaboral = () => {
                         variant="contained"
                         color="primary"
                         disabled={state.submitting}
+                        sx={{
+                            backgroundColor: "#555555",
+                            color: "#fff",
+                            transition: "transform 0.3s ease",
+                            "&:hover": {
+                                backgroundColor: "#666666",
+                                transform: "scale(1.05)",
+                                boxShadow: "5px 5px 12px black",
+                            },
+                        }}
                     >
                         Enviar Consulta
                     </Button>

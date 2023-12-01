@@ -1,12 +1,22 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Button, Box } from "@mui/material";
 import style from "./jubilaciones.module.css";
+import { useNavigate } from "react-router-dom";
+import config from '../../../../../../config'
 
 const Jubilaciones = () => {
-    const [state, handleSubmit] = useForm("xaygvgql");
+    const [state, handleSubmit] = useForm(config.FormsApiKey);
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        navigate('/')
+
+        alert("¡Formulario enviado exitosamente!");
+    };
 
     if (state.succeeded) {
-        return <p>¡Gracias por unirte!</p>;
+        handleSuccess();
+        return null;
     }
 
     const currentYear = new Date().getFullYear();
@@ -16,13 +26,13 @@ const Jubilaciones = () => {
     return (
         <main className={style.background}>
             <form onSubmit={handleSubmit} className={style.form}>
-                <label for="consulta" className={style.labels}>
+                <label htmlFor="consulta" className={style.labels}>
                     Tipo de Consulta:
                 </label>
                 <input
                     className={style.inputDesactivate}
                     type="text"
-                    name="consulta"
+                    name="Consulta"
                     id="consulta"
                     readOnly
                     defaultValue="Jubilaciones"
@@ -33,14 +43,14 @@ const Jubilaciones = () => {
                     errors={state.errors}
                 />
 
-                <label for="nombre" className={style.labels}>
+                <label htmlFor="nombre" className={style.labels}>
                     Nombre:
                 </label>
                 <input
                     className={style.inputs}
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="Nombre"
                     required
                 />
                 <ValidationError
@@ -49,14 +59,14 @@ const Jubilaciones = () => {
                     errors={state.errors}
                 />
 
-                <label for="apellido" className={style.labels}>
+                <label htmlFor="apellido" className={style.labels}>
                     Apellido:
                 </label>
                 <input
                     className={style.inputs}
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="Apellido"
                     required
                 />
                 <ValidationError
@@ -65,45 +75,45 @@ const Jubilaciones = () => {
                     errors={state.errors}
                 />
 
-                <label for="dni" className={style.labels}>
+                <label htmlFor="dni" className={style.labels}>
                     DNI:
                 </label>
                 <input
                     className={style.inputs}
                     type="text"
                     id="dni"
-                    name="dni"
+                    name="DNI"
                     pattern="[0-9]*"
                     required
                 />
 
-                <fieldset className={style.fieldSets}>
+                <fieldset className={style.fieldSets2}>
                     <legend>Fecha de Nacimiento</legend>
 
-                    <label for="dia" className={style.labels3}>
+                    <label htmlFor="dia" className={style.labels3}>
                         Dia:{" "}
                     </label>
                     <input
                         className={style.inputs2}
                         type="number"
                         id="dia"
-                        name="dia-Nacimiento"
+                        name="Dia de Nacimiento"
                         min="1"
                         max="31"
                         step="1"
                         required
                     />
 
-                    <label for="mes" className={style.labels3}>
+                    <label htmlFor="mes" className={style.labels3}>
                         Mes:{" "}
                     </label>
                     <select
-                        name="Mes-Nacimiento"
+                        name="Mes de Nacimiento"
                         id="mes"
                         required
                         className={style.selects}
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Enero">Enero</option>
                         <option value="Febrero">Febrero</option>
                         <option value="Marzo">Marzo</option>
@@ -120,12 +130,12 @@ const Jubilaciones = () => {
 
                     <label className={style.labels3}>Año: </label>
                     <select
-                        name="Año-Nacimiento"
+                        name="Año de Nacimiento"
                         id="año"
                         required
                         className={style.selects}
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         {years.map((year) => (
                             <option key={year} value={year}>
                                 {year}
@@ -141,19 +151,19 @@ const Jubilaciones = () => {
                         flexDirection: "column",
                         width: "95%",
                         alignItems: "flex-start",
-                        height: "14%",
+                        height: "auto",
                     }}
                 >
-                    <label for="nacionalidad" className={style.labels2}>
+                    <label htmlFor="nacionalidad" className={style.labels2}>
                         Nacionalidad:
                     </label>
                     <select
                         id="nacionalidad"
-                        name="nacionalidad"
+                        name="Nacionalidad"
                         required
                         className={style.selects2}
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Argentina">Argentina</option>
                         <option value="Uruguay">Uruguay</option>
                         <option value="Chile">Chile</option>
@@ -169,16 +179,16 @@ const Jubilaciones = () => {
                         <option value="Otros">Otros</option>
                     </select>
 
-                    <label for="estadoCivil" className={style.labels2}>
+                    <label htmlFor="estadoCivil" className={style.labels2}>
                         Estado Civil:
                     </label>
                     <select
                         id="estadoCivil"
-                        name="estadoCivil"
+                        name="Estado Civil"
                         required
                         className={style.selects2}
                     >
-                        <option value="" selected="" disabled=""></option>
+                        <option value="" defaultValue="" disabled=""></option>
                         <option value="Soltero">Soltero</option>
                         <option value="Casado">Casado</option>
                         <option value="Viudo">Viudo</option>
@@ -188,23 +198,26 @@ const Jubilaciones = () => {
 
                 <fieldset className={style.fieldSets}>
                     <legend>Domicilio y Residencia</legend>
-                    <label for="domicilioParticular" className={style.labels3}>
+                    <label
+                        htmlFor="domicilioParticular"
+                        className={style.labels3}
+                    >
                         Domicilio Particular:
                     </label>
                     <input
-                        className={style.inputs2}
+                        className={style.inputs3}
                         type="text"
                         id="domicilioParticular"
-                        name="domicilioParticular"
+                        name="Domicilio Particular"
                         required
                     />
 
-                    <label for="localidad" className={style.labels3}>
+                    <label htmlFor="localidad" className={style.labels3}>
                         Localidad:
                     </label>
                     <select
                         id="localidad"
-                        name="localidad"
+                        name="Localidad"
                         required
                         className={style.selects}
                     >
@@ -238,14 +251,14 @@ const Jubilaciones = () => {
                     </select>
                 </fieldset>
 
-                <label for="telefonoCelular" className={style.labels}>
+                <label htmlFor="telefonoCelular" className={style.labels}>
                     Teléfono Celular:
                 </label>
                 <input
                     className={style.inputs}
                     type="text"
                     id="telefonoCelular"
-                    name="telefonoCelular"
+                    name="Telefono Celular"
                     required
                 />
                 <ValidationError
@@ -254,14 +267,14 @@ const Jubilaciones = () => {
                     errors={state.errors}
                 />
 
-                <label for="telefonoAlternativo" className={style.labels}>
+                <label htmlFor="telefonoAlternativo" className={style.labels}>
                     Teléfono Alternativo:
                 </label>
                 <input
                     className={style.inputs}
                     type="text"
                     id="telefonoAlternativo"
-                    name="telefonoAlternativo"
+                    name="Telefono Alternativo"
                     required
                 />
                 <ValidationError
@@ -270,14 +283,14 @@ const Jubilaciones = () => {
                     errors={state.errors}
                 />
 
-                <label for="telefonoFamiliar" className={style.labels}>
+                <label htmlFor="telefonoFamiliar" className={style.labels}>
                     Teléfono de un Familiar:
                 </label>
                 <input
                     className={style.inputs}
                     type="text"
                     id="telefonoFamiliar"
-                    name="telefonoFamiliar"
+                    name="Telefono Familiar"
                     required
                 />
                 <ValidationError
@@ -286,14 +299,14 @@ const Jubilaciones = () => {
                     errors={state.errors}
                 />
 
-                <label for="correoElectronico" className={style.labels}>
+                <label htmlFor="correoElectronico" className={style.labels}>
                     Correo Electrónico:
                 </label>
                 <input
                     className={style.inputs}
                     type="email"
                     id="correoElectronico"
-                    name="correoElectronico"
+                    name="Correo Electronico"
                     required
                 />
                 <ValidationError
@@ -304,8 +317,8 @@ const Jubilaciones = () => {
 
                 <Box
                     sx={{
-                        marginBottom: "5%",
-                        marginTop: "2%",
+                        marginBottom: "5vh",
+                        marginTop: "2vh",
                     }}
                 >
                     <Button
@@ -313,6 +326,16 @@ const Jubilaciones = () => {
                         variant="contained"
                         color="primary"
                         disabled={state.submitting}
+                        sx={{
+                            backgroundColor: "#555555",
+                            color: "#fff",
+                            transition: "transform 0.3s ease",
+                            "&:hover": {
+                                backgroundColor: "#666666",
+                                transform: "scale(1.05)",
+                                boxShadow: "5px 5px 12px black",
+                            },
+                        }}
                     >
                         Enviar Consulta
                     </Button>

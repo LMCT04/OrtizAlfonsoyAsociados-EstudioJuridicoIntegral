@@ -13,7 +13,7 @@ const FormCivil = () => {
     return(
         <main>
             <div className={style.text1} >
-                <p>Seleccione el tipo de consulta Civil</p>
+                <p>Seleccione el tipo de consulta CIVIL</p>
             </div>
             <Tabs
                 value={value}
@@ -24,19 +24,22 @@ const FormCivil = () => {
                 sx={{
                     marginTop:'0',
                     "& .Mui-selected": {
-                        color: "currentColor",
+                        color: "#333333"
                     },
                     "& .MuiTab-root": {
                         "&:focus": {
                             outline: "none",
                             color: "#333333"
                         },
+                        "&:disabled":{
+                            color:'currentColor'
+                        }
                     },
                 }}
             >
                 <Tab
                     label="ACCIDENTE VIAL"
-                    isActive={value === 0}
+                    value={0}
                     sx={{
                         color: "gray",
                     }}

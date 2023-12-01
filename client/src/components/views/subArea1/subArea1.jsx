@@ -12,6 +12,7 @@ import Loading from "../../other/loading/loading";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { consultation } from "../../other/texts/Texts";
+import img from "../../../assets/fondo5.png";
 
 const SubArea1 = () => {
     const [expandedPanel1, setExpandedPanel1] = useState(false);
@@ -57,18 +58,48 @@ const SubArea1 = () => {
                 <Loading />
             ) : (
                 <>
-                    <div className={style.img} />
                     <Box
                         sx={{
-                            position: "absolute",
-                            height: "25%",
+                            height: "70vh",
+                            width: "100%",
+                            backgroundColor: "#888888",
+                            display: "flex",
+                            justifyContent: "center",
+                            "@media (max-width: 768px)": {
+                                height: "auto",
+                                backgroundColor: "transparent",
+                            },
+                        }}
+                    >
+                        <Box
+                            sx={{
+                                height: "100%",
+                                width: "auto",
+                                "@media (max-width: 768px)": {
+                                    width: "100%",
+                                },
+                            }}
+                        >
+                            {<img src={img} alt="img" className={style.img} />}
+                        </Box>
+                    </Box>
+                    <Box
+                        sx={{
+                            height: "23vh",
                             width: "65%",
                             backgroundColor: "#555555",
-                            top: "660px",
-                            left: "666px",
-                            display: "flex",
+                            position: "absolute",
+                            right: "0%",
+                            top: "74%",
                             color: "#dee4e4",
                             boxShadow: "5px 5px 12px black",
+                            display: "flex",
+                            "@media (max-width: 768px)": {
+                                position: "static",
+                                width: "100%",
+                                height: "28vh",
+                                flexDirection: "column",
+                            },
                         }}
                     >
                         <Box
@@ -78,38 +109,53 @@ const SubArea1 = () => {
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "flex-start",
+                                "@media (max-width: 768px)": {
+                                    width: "100%",
+                                },
                             }}
                         >
                             <Box
                                 sx={{
-                                    margin: "3%",
                                     display: "flex",
                                     flexDirection: "column",
                                     alignItems: "flex-start",
+                                    margin:'auto',
+                                    marginLeft:'2%',
+                                    "@media (max-width: 768px)": {
+                                        marginLeft:'0%',
+                                    },
                                 }}
                             >
                                 <Typography
                                     sx={{
                                         fontWeight: "bold",
-                                        fontSize: "35px",
+                                        fontSize: "1.8vw",
+                                        textAlign: "left",
+                                        "@media (max-width: 1821px)": {
+                                            fontSize: "1.6vw",
+                                        },
+                                        "@media (max-width: 768px)": {
+                                            fontSize: "5vw",
+                                            textAlign: "center",
+                                        },
                                     }}
                                 >
-                                    Resolvemos tus problemas juridicos
-                                </Typography>
-
-                                <Typography
-                                    sx={{
-                                        fontWeight: "bold",
-                                        fontSize: "35px",
-                                    }}
-                                >
-                                    Haznos tu consulta AHORA
+                                    Resolvemos tus problemas juridicos. Haznos
+                                    tu consulta AHORA
                                 </Typography>
 
                                 <Typography
                                     sx={{
                                         marginTop: "2%",
                                         textAlign: "left",
+                                        fontSize: "0.9vw",
+                                        "@media (max-width: 1821px)": {
+                                            fontSize: "0.8vw",
+                                        },
+                                        "@media (max-width: 768px)": {
+                                            fontSize: "3vw",
+                                            textAlign: "center",
+                                        },
                                     }}
                                 >
                                     Consulta gratis, solo cobramos un porcentaje
@@ -125,6 +171,10 @@ const SubArea1 = () => {
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
+                                "@media (max-width: 768px)": {
+                                    width: "100%",
+                                    height: "50%",
+                                },
                             }}
                         >
                             <NavLink to="/formsIndex">
@@ -140,6 +190,7 @@ const SubArea1 = () => {
                                             transform: "scale(1.05)",
                                             boxShadow: "5px 5px 12px black",
                                         },
+                                        "@media (max-width: 768px)": {},
                                     }}
                                 >
                                     FORMULARIO DE CONSULTA
@@ -149,31 +200,52 @@ const SubArea1 = () => {
                     </Box>
                     <Box
                         sx={{
-                            width: "100%",
-                            height: "41.9%",
+                            height: "85vh",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
+                            "@media (max-width: 768px)": {
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent:'normal',
+                                height: "auto",
+                            },
                         }}
                     >
                         <Box
                             sx={{
+                                height: "65%",
+                                width: "30%",
+                                marginLeft: "10%",
+                                marginRight: "8%",
                                 backgroundColor: "#888888",
-                                height: "68%",
-                                width: "25%",
-                                marginTop: "3%",
+                                "@media (max-width: 1821px)": {
+                                    height:'78%',
+                                    marginTop:'5%',
+                                    marginBottom:'2.5%'
+                                },
+                                "@media (max-width: 768px)": {
+                                    width: "100%",
+                                    marginLeft: "0%",
+                                    marginRight: "0%",
+                                    height:'auto',
+                                    marginTop:'9%'
+                                },
                             }}
                         >
                             <Box
                                 sx={{
-                                    margin: "2.5%",
+                                    margin: "5%",
                                     color: "#dee4e4",
                                 }}
                             >
                                 <Typography
                                     sx={{
                                         fontWeight: "bold",
-                                        fontSize: "35px",
+                                        fontSize: "1.8vw",
+                                        "@media (max-width: 768px)": {
+                                            fontSize: "5vw",
+                                        },
                                     }}
                                 >
                                     Despidos
@@ -181,13 +253,18 @@ const SubArea1 = () => {
                                 <Typography
                                     sx={{
                                         marginTop: "2%",
+                                        textAlign: "justify",
+                                        fontSize: "0.9vw",
+                                        "@media (max-width: 768px)": {
+                                            fontSize: "3vw",
+                                        },
                                     }}
                                 >
                                     {consultation.despidos}
                                 </Typography>
                                 <Box
                                     sx={{
-                                        marginTop: "5%",
+                                        marginTop: "2.5%",
                                     }}
                                 >
                                     <Accordion
@@ -202,14 +279,40 @@ const SubArea1 = () => {
                                             aria-controls="panel1a-content"
                                             id="panel1a-header"
                                         >
-                                            <Typography>Domestico</Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
+                                                    "@media (max-width: 768px)":
+                                                        {
+                                                            fontSize: "3vw",
+                                                        },
+                                                }}
+                                            >
+                                                Domestico
+                                            </Typography>
                                         </AccordionSummary>
                                         <AccordionDetails
                                             sx={{
                                                 backgroundColor: "#555555",
                                             }}
                                         >
-                                            <Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
+                                                    "@media (max-width: 768px)":
+                                                        {
+                                                            fontSize: "2.5vw",
+                                                        },
+                                                }}
+                                            >
                                                 {consultation.domestico}
                                             </Typography>
                                         </AccordionDetails>
@@ -227,7 +330,19 @@ const SubArea1 = () => {
                                             aria-controls="panel2a-content"
                                             id="panel2a-header"
                                         >
-                                            <Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
+                                                    "@media (max-width: 768px)":
+                                                        {
+                                                            fontSize: "3vw",
+                                                        },
+                                                }}
+                                            >
                                                 Construccion
                                             </Typography>
                                         </AccordionSummary>
@@ -236,7 +351,19 @@ const SubArea1 = () => {
                                                 backgroundColor: "#555555",
                                             }}
                                         >
-                                            <Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
+                                                    "@media (max-width: 768px)":
+                                                        {
+                                                            fontSize: "2.5vw",
+                                                        },
+                                                }}
+                                            >
                                                 {consultation.construccion}
                                             </Typography>
                                         </AccordionDetails>
@@ -254,7 +381,19 @@ const SubArea1 = () => {
                                             aria-controls="panel3a-content"
                                             id="panel3a-header"
                                         >
-                                            <Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
+                                                    "@media (max-width: 768px)":
+                                                        {
+                                                            fontSize: "3vw",
+                                                        },
+                                                }}
+                                            >
                                                 Contrato de Trabajo
                                             </Typography>
                                         </AccordionSummary>
@@ -263,7 +402,19 @@ const SubArea1 = () => {
                                                 backgroundColor: "#555555",
                                             }}
                                         >
-                                            <Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontSize: "0.9vw",
+                                                    "@media (max-width: 1821px)":
+                                                        {
+                                                            fontSize: "0.7vw",
+                                                        },
+                                                    "@media (max-width: 768px)":
+                                                        {
+                                                            fontSize: "2.5vw",
+                                                        },
+                                                }}
+                                            >
                                                 {consultation.contratoTrabajo}
                                             </Typography>
                                         </AccordionDetails>
@@ -273,11 +424,24 @@ const SubArea1 = () => {
                         </Box>
                         <Box
                             sx={{
+                                height: "65%",
+                                width: "30%",
+                                marginLeft: "8%",
+                                marginRight: "10%",
                                 backgroundColor: "#555555",
-                                height: "68%",
-                                width: "25%",
-                                marginTop: "3%",
-                                marginLeft: "5%",
+                                "@media (max-width: 1821px)": {
+                                    height:'78%',
+                                    marginTop:'5%',
+                                    marginBottom:'2.5%'
+                                },
+                                "@media (max-width: 768px)": {
+                                    width: "100%",
+                                    marginLeft: "0%",
+                                    marginRight: "0%",
+                                    height: "35%",
+                                    marginTop:'5%',
+                                    marginBottom:'5%'
+                                },
                             }}
                         >
                             <Box
@@ -289,29 +453,30 @@ const SubArea1 = () => {
                                 <Typography
                                     sx={{
                                         fontWeight: "bold",
-                                        fontSize: "35px",
+                                        fontSize: "1.8vw",
+                                        "@media (max-width: 768px)": {
+                                            fontSize: "4vw",
+                                        },
                                     }}
                                 >
-                                    ART
+                                    ASEGURADORAS DE RIESGOS DEL TRABAJO (ART)
                                 </Typography>
                                 <Typography
                                     sx={{
-                                        marginTop: "10%",
+                                        marginTop: "2%",
+                                        textAlign: "justify",
+                                        fontSize: "0.9vw",
+                                        "@media (max-width: 767px)": {
+                                            fontSize: "3vw",
+                                        },
                                     }}
                                 >
-                                    En caso de sufrir un accidente laboral, la
-                                    ley establece la protección a través del
-                                    sistema de Aseguradoras de Riesgos del
-                                    Trabajo (ART). Estas aseguradoras brindan
-                                    cobertura médica y económica al trabajador
-                                    afectado. Conozca más sobre sus derechos y
-                                    cómo proceder ante un incidente laboral
-                                    consultando con nuestro equipo.
+                                    {consultation.art}
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>
-                    <Footer />
+                    <Footer/>
                 </>
             )}
         </main>

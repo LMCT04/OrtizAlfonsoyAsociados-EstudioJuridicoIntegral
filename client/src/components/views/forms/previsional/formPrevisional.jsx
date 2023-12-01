@@ -25,26 +25,29 @@ const FormPrevisional = () => {
                 sx={{
                     marginTop:'0',
                     "& .Mui-selected": {
-                        color: "currentColor",
+                        color: "#333333"
                     },
                     "& .MuiTab-root": {
                         "&:focus": {
                             outline: "none",
                             color: "#333333"
                         },
+                        "&:disabled":{
+                            color:'currentColor'
+                        }
                     },
                 }}
             >
                 <Tab
                     label="JUBILACIONES"
-                    isActive={value === 0}
+                    value={0}
                     sx={{
                         color: "gray",
                     }}
                 />
                 <Tab
                     label="PENSIONES"
-                    isActive={value === 1}
+                    value={1}
                     sx={{
                         color: "gray",
                     }}

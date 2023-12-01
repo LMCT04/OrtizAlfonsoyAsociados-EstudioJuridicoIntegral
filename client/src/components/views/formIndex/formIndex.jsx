@@ -27,10 +27,9 @@ const FormIndex = () => {
             ) : (
                 <>
                     <div className={style.text1}>
-                        <p className={style.p}>Seleccione y complete el</p>
-                        <h3>FORMULARIO</h3>
                         <p className={style.p}>
-                            que desee para llevar a cabo su consulta
+                            Seleccione y complete el FORMULARIO que desee para
+                            llevar a cabo su consulta
                         </p>
                     </div>
                     <Tabs
@@ -42,33 +41,36 @@ const FormIndex = () => {
                         sx={{
                             marginTop: "0",
                             "& .Mui-selected": {
-                                color: "currentColor",
+                                color: "#333333 !important" 
                             },
                             "& .MuiTab-root": {
                                 "&:focus": {
                                     outline: "none",
                                     color: "#333333",
                                 },
+                                "&:disabled":{
+                                    color:'currentColor'
+                                }
                             },
                         }}
                     >
                         <Tab
                             label="LABORAL"
-                            isActive={value === 0}
+                            value={0}
                             sx={{
                                 color: "gray",
                             }}
                         />
                         <Tab
                             label="PREVISIONAL"
-                            isActive={value === 1}
+                            value={1}
                             sx={{
                                 color: "gray",
                             }}
                         />
                         <Tab
                             label="CIVIL"
-                            isActive={value === 2}
+                            value={2}
                             sx={{
                                 color: "gray",
                             }}
